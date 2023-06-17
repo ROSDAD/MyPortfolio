@@ -38,7 +38,7 @@ const MenuBar = () => {
 
       >
         <MenuButton onClick={handleClick}>
-          <img src={menuIcon} alt="Start" style={{ height: 28,marginBottom:7 }} />
+          <img src={menuIcon} alt="Start" style={{ height: 34,marginBottom:5 }} />
         </MenuButton>
 
         {/* <MenuButton>

@@ -11,7 +11,17 @@ import {
     TextField,
     Typography,
     useTheme,
-    Modal
+    Modal,
+    Dialog,
+    ListItemText,
+    List,
+    ListItem,
+    Divider,
+    AppBar,
+    Toolbar,
+    Container,
+    Slide
+
     
   } from "@mui/material";
   import React, {useState} from "react";
@@ -23,18 +33,13 @@ import {
   import { pinnedApps, recommendedApps } from "../../utils/apps";
   import Folder from "../../../public/icons/system/Folder.ico";
 
+
+
+
   const Projects = ({ open, ProjectWindow, handleClose }) => {
     const theme = useTheme();
     
   
-    // const handleClick = (e) => {
-    //   setProjectWindow(e.currentTarget);
-    // };
-  
-    // const handleClose = () => {
-    //   setProjectWindow(null);
-    // };
-    console.log(handleClose);
     const MenuLabel = ({ title, buttonText }) => (
       <Stack
         direction="row"
@@ -90,7 +95,7 @@ import {
             direction={"row"}
             alignItems="center"
             justifyContent="space-between"
-            sx={{ px: { xs: 2, lg: 4 } }}
+            sx={{ px: { xs: 2, lg: 2 } }}
           >
             <Button
               direction="row"
@@ -125,7 +130,7 @@ import {
         {/* Apps */}
         <Box
           sx={{
-            p: 3,
+            p: 6,
             flex: 1,
             
             backgroundColor: `${theme.palette.background.grey}F7`,
@@ -133,112 +138,131 @@ import {
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
+            overflowY:"auto"
           }}
         >
+          
+        <Grid container xs={12} sm={12} md={12} lg={12} xl={12}
         
-          {/* Search */}
-          <TextField
-            variant="filled"
-            fullWidth
-            size="small"
-            hiddenLabel
-            sx={{
-              pb: { xs: 2, lg: 4 },
-              "& .MuiFilledInput-root": {
-                background: "rgba(0,0,0,0.3)",
-              },
-            }}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon fontSize="small" />
-                </InputAdornment>
-              ),
-            }}
-          />
-  
-          {/* Pinned Text */}
-          <MenuLabel title="Pinned" buttonText="All Apps >" />
-  
-          {/* Pinned Apps */}
-          <Stack
-            direction="row"
-            flexWrap="wrap"
-            justifyContent="flex-start"
-            sx={{ mb: 3 }}
-          >
-            {pinnedApps.map((app, i) => (
-              <Button
-                key={app.name}
-                sx={{
-                  height: 85,
-                  minWidth: 98,
-                  width: 98,
-                  color: "#fff",
-                  textTransform: "inherit",
-                  "&:hover": {
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                  },
-                }}
-              >
-                <Stack
-                  spacing={1}
-                  direction="column"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <img src={app.icon} alt={app.name} style={{ height: 30 }} />
-                  <Typography variant="caption">{app.name}</Typography>
-                </Stack>
-              </Button>
-            ))}
+        style={{
+          margin:0,
+          width:"100%",
+          
+        }}>
+         
+          <Stack style={{ width:"100%" }}>
+          <hr style={{width:"100%", "background-color":"#000"}}/>   
+          <h2 style={{
+            margin:0
+          }}>
+            Click-To-Cart - <span style={{ fontSize:15 }}><a href="https://github.com/ROSDAD/click-to-cart" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>
+            </span>
+            
+          </h2>
+          
+          <p 
+          style={{
+            margin:0
+          }}>
+            <i>Tech Stack</i>
+          </p>
+          <h4 
+          style={{
+            margin:0,
+            color:"#ffba00"
+          }}>
+            Sep 2022 - Dec 2022
+          </h4>
+        <ul style={{ margin:0 }}>
+          <li>
+            <p style={{
+              "text-align":"justify"
+            }}>
+            Worked with over 23 Java Classes to develop an E-Commerce Clone Java Swing Application using Java.
+            </p>
+          </li>
+          <li>
+            <p style={{
+              "text-align":"justify"
+            }}>
+            Assisted users in ordering anything from the retail stores nearby and allow admins to control Cities,
+             Organizations and Departments.
+            </p>
+          </li>
+          </ul>
           </Stack>
-  
-          {/* Recommended Text */}
-          <MenuLabel title="Recommended" buttonText="More >" />
-  
-          {/* Recommended Apps */}
-          <Grid
-            container
-            direction="row"
-            flexWrap="wrap"
-            justifyContent="flex-start"
-            spacing={2}
-            sx={{ px: 2 }}
-          >
-            {recommendedApps.map((app, i) => (
-              <Grid item key={app.name} xs={12} lg={6}>
-                <Button
-                  fullWidth
-                  sx={{
-                    py: 1,
-                    px: 2,
-                    justifyContent: "flex-start",
-                    textTransform: "inherit",
-                    "&:hover": {
-                      backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    },
-                  }}
-                >
-                  <Stack direction="row" alignItems="center" spacing={2}>
-                    <img src={app.icon} alt={app.name} style={{ height: 30 }} />
-  
-                    <Stack alignItems="flex-start">
-                      <Typography variant="caption" sx={{ color: "#fff" }}>
-                        {app.name}
-                      </Typography>
-                      <Typography
-                        variant="caption"
-                        sx={{ color: theme.palette.primary.light }}
-                      >
-                        Recently Added
-                      </Typography>
-                    </Stack>
-                  </Stack>
-                </Button>
-              </Grid>
-            ))}
-          </Grid>
+          <Stack >
+          <hr style={{width:"100%"}}/>   
+          <h2 style={{
+            margin:0
+          }}>
+            Project name - <span style={{ fontSize:15 }}><a href="#" style={{color:"#6666ff"}}><u>GitHub</u></a>,
+            <a style={{color:"#6666ff"}}>Youtube</a></span>
+            
+          </h2>
+          
+          <p 
+          style={{
+            margin:0
+          }}>
+            <i>Tech Stack</i>
+          </p>
+          <h4 
+          style={{
+            margin:0,
+            color:"#ffba00"
+          }}>
+            2022 — 2023
+          </h4>
+        <ul style={{ margin:0 }}>
+        <li>
+          <p style={{
+            "text-align":"justify"
+          }}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          </li>
+          </ul>
+          </Stack>
+          <Stack >
+          <hr style={{width:"100%"}}/>   
+          <h2 style={{
+            margin:0
+          }}>
+            Project name - <span style={{ fontSize:15 }}><a href="#" style={{color:"#6666ff"}}><u>GitHub</u></a>,
+            <a style={{color:"#6666ff"}}>Youtube</a></span>
+            
+          </h2>
+          
+          <p 
+          style={{
+            margin:0
+          }}>
+            <i>Tech Stack</i>
+          </p>
+          <h4 
+          style={{
+            margin:0,
+            color:"#ffba00"
+          }}>
+            2022 — 2023
+          </h4>
+        <ul style={{ margin:0 }}>
+        <li>
+          <p style={{
+            "text-align":"justify"
+          }}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          </li>
+          </ul>
+          </Stack>
+
+
+          <hr style={{width:"100%", "background-color":"#000"}}/> 
+        </Grid>
+          
+          
         </Box>
   
         {/* User */}
@@ -247,24 +271,34 @@ import {
     );
   
     return (
-      <Popover
-        open={open}
-        ProjectWindow={ProjectWindow}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "center",
-        }}
-        transformOrigin={{ vertical: "center", horizontal: "center" }}
-      PaperProps={{
-        style: { backgroundColor: "transparent", boxShadow: "none" },
-      }}
-      keepMounted>
-        <MenuContent />
+      // <Popover
+      //   open={open}
+      //   ProjectWindow={ProjectWindow}
+      //   onClose={handleClose}
+      //   anchorOrigin={{
+      //     vertical: "top",
+      //     horizontal: "center",
+      //   }}
+      //   transformOrigin={{ vertical: "center", horizontal: "center" }}
+      // PaperProps={{
+      //   style: { backgroundColor: "transparent", boxShadow: "none" },
+      // }}
+      // keepMounted>
+      //   <MenuContent />
         
         
 
-      </Popover>
+      // </Popover>
+      <Dialog
+        fullScreen
+        open={open}
+        ProjectWindow={ProjectWindow}
+        onClose={handleClose}
+        // TransitionComponent={Transition}
+        keepMounted
+      >
+      <MenuContent />
+      </Dialog>
     );
   };
   

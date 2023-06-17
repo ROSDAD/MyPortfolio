@@ -68,10 +68,14 @@ const Menu = ({ open, anchorEl, handleClose }) => {
     <Stack
       sx={{
         width: "94vw",
-        height: "94vh",
+        height: "90vh",
         [theme.breakpoints.up("lg")]: {
-          width: 640,
-          height: 750,
+          width: "38vw",
+          height: "90vh",
+        },
+        [theme.breakpoints.up("md")]: {
+          width: 500,
+          height: "90vh",
         },
       }}
     >
@@ -121,6 +125,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           {pinnedApps.map((app, i) => (
             <Button
               key={app.name}
+              
               sx={{
                 height: 85,
                 minWidth: 98,
@@ -138,7 +143,9 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                 alignItems="center"
                 justifyContent="center"
               >
-                <img src={app.icon} alt={app.name} style={{ height: 30 }} />
+                <a target="_blank" href={app.Link}>
+                    <img src={app.icon} alt={app.name} style={{ height: 30 }} />
+                  </a>
                 <Typography variant="caption">{app.name}</Typography>
               </Stack>
             </Button>
