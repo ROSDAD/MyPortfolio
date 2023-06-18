@@ -2,9 +2,15 @@
 import { Button, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useDrag } from "react-dnd";
-import Projects from "../../containers/Projects"
+import Projects from "../../containers/Projects";
+import Skills from "../../containers/Skills";
+import Experience from "../../containers/Experience";
+import Activities from "../../containers/Activities";
+import Certifications from "../../containers/Certifications";
+import Contact from "../../containers/Contact";
 
-const AppButton = ({ id, left, top, name, icon }) => {
+
+const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
   const [{ isDragging }, drag] = useDrag(
     () => ({
       type: "box",
@@ -16,16 +22,51 @@ const AppButton = ({ id, left, top, name, icon }) => {
     [id, left, top]
   );
   const [ProjectWindow, setProjectWindow] = useState(null);
-  const open = Boolean(ProjectWindow);
-  console.log(ProjectWindow)
-  console.log(open)
+  const [SkillsWindow, setSkillsWindow] = useState(null);
+  const [ExperienceWindow, setExperienceWindow] = useState(null);
+  const [CertificationsWindow, setCertificationsWindow] = useState(null);
+  const [ActivitiesWindow, setActivitiesWindow] = useState(null);
+  const [ContactWindow, setContactWindow] = useState(null);
+  
+  const openProjectWindow = Boolean(ProjectWindow);
+  const openSkillsWindow = Boolean(SkillsWindow);
+  const openExperienceWindow = Boolean(ExperienceWindow);
+  const openCertificationsWindow = Boolean(CertificationsWindow);
+  const openActivitiesWindow = Boolean(ActivitiesWindow);
+  const openContactWindow = Boolean(ContactWindow);
+
   const handleClick = (e) => {
-    setProjectWindow(e.currentTarget);
+
+    
+    if(btnTarget === "projects"){
+      setProjectWindow(e.currentTarget);
+    }
+    else if(btnTarget === "skills"){
+      setSkillsWindow(e.currentTarget);
+    }
+    else if(btnTarget === "experience"){
+      setExperienceWindow(e.currentTarget);
+    }
+    else if(btnTarget === "certifications"){
+      setCertificationsWindow(e.currentTarget);
+    }
+    else if(btnTarget === "activities"){
+      setActivitiesWindow(e.currentTarget);
+    }
+    else if(btnTarget === "contactme"){
+      setContactWindow(e.currentTarget);
+    }
   };
 
   const handleClose = () => {
     console.log("in here")
+
     setProjectWindow(null);
+    setSkillsWindow(null);
+    setExperienceWindow(null);
+    setCertificationsWindow(null);
+    setActivitiesWindow(null);
+    setContactWindow(null);
   };
 
   if (isDragging) {
@@ -60,7 +101,12 @@ const AppButton = ({ id, left, top, name, icon }) => {
       </Stack>
       
     </Button>
-    <Projects open={open} ProjectWindow={ProjectWindow} handleClose={handleClose} />
+    <Projects open={openProjectWindow} ProjectWindow={ProjectWindow} handleClose={handleClose} />
+    <Skills open={openSkillsWindow} SkillsWindow={SkillsWindow} handleClose={handleClose} />
+    <Experience open={openExperienceWindow} ExperienceWindow={ExperienceWindow} handleClose={handleClose} />
+    <Certifications open={openCertificationsWindow} CertificationsWindow={CertificationsWindow} handleClose={handleClose} />
+    <Activities open={openActivitiesWindow} ActivitiesWindow={ActivitiesWindow} handleClose={handleClose} />
+    <Contact open={openContactWindow} ContactWindow={ContactWindow} handleClose={handleClose} />
     </div>
   );
 };

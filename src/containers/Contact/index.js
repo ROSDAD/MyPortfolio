@@ -36,7 +36,7 @@ import {
 
 
 
-  const Projects = ({ open, ProjectWindow, handleClose }) => {
+  const Contact = ({ open, ProjectWindow, handleClose }) => {
     const theme = useTheme();
     
   
@@ -111,7 +111,7 @@ import {
               <img style={{ width: 18, height: 18,marginRight:10,marginBottom:4 }} src={Folder}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
-              <Typography>Projects</Typography>
+              <Typography>Contact Me</Typography>
             </Button>
             <div>
             <IconButton size="small" onClick={handleClose}>
@@ -132,7 +132,7 @@ import {
           sx={{
             p: 6,
             flex: 1,
-            paddingTop:0,
+            
             backgroundColor: `${theme.palette.background.grey}F7`,
             backdropFilter: "blur(5px)",
             border: "1px solid #525252",
@@ -151,10 +151,6 @@ import {
         }}>
          
           <Stack style={{ width:"100%" }}>
-          <h1 style={{
-            
-            color:"#ffba00"
-          }}>Projects</h1>
           <hr style={{width:"100%", "background-color":"#000"}}/>   
           <h2 style={{
             margin:0
@@ -432,5 +428,5 @@ import {
     );
   };
   
-  export default Projects;
+  export default Contact;
   

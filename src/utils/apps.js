@@ -32,11 +32,15 @@ import GoogleScholar from "../../public/icons/apps/Google Scholar.ico"
 
 
 export const desktopApps = [
-  { name: "Recycle Bin", icon: Trash },
-  { name: "Adobe Photoshop", icon: AdobePhotoshop },
-  { name: "Google Chrome", icon: Chrome },
-  { name: "Popcorn Time", icon: PopcornTime },
+  { name: "Skills", icon: Folder,btnTarget:"skills" },
   { name: "Projects", icon: Folder,btnTarget:"projects" },
+  { name: "Experience", icon: Folder,btnTarget:"experience" },
+  
+  { name: "Certifications", icon: Folder,btnTarget:"certifications" },
+  { name: "Activities", icon: Folder,btnTarget:"activities" },
+  
+  
+  { name: "Contact Me", icon: Chrome,btnTarget:"contactme" },
 ];
 
 export const pinnedApps = [

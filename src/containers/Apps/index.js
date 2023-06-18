@@ -53,7 +53,7 @@ const Apps = () => {
   return (
     <Box
       ref={drop}
-      sx={{ width: "100%", height: "100%", position: "relavite" }}
+      sx={{ width: "100%", height: "100%", position: "relative" }}
     >
       {Object.keys(apps).map((key) => {
         const { left, top, name, icon,btnTarget } = apps[key];
@@ -68,6 +68,7 @@ const Apps = () => {
             top={top}
             name={name}
             icon={icon}
+            btnTarget={btnTarget}
           />
         );
       })}
