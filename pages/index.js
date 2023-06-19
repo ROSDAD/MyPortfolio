@@ -61,7 +61,7 @@ const Home = () => {
         
           <p>Hi! You're Now Signed In As <u style={{ fontSize:25}}>Roshan Dadlani</u>. <br/>Feel Free To Roam Around! 😄 <br/><br/> <span style={{ fontSize:"15px" }}>Created With ❤️ & ☕</span></p>
         </Box>
-      <Box sx={{ height: "100%" }}>
+      <Box sx={{ height: "100%", }}>
         <Apps />
       </Box>
       

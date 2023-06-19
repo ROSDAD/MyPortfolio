@@ -10,15 +10,34 @@ const Apps = () => {
 
   useEffect(() => {
     const _apps = {};
-
-    desktopApps.map((app, i) => {
+    const count = 0;
+    const leftoffset = 0;
+    const topoffset = 0;
+    desktopApps.map((app, i) => { 
+      
+    
+      
+      
+      console.log(screen.height - (topoffset * 100 + 20));
+      if(i!=0){
+      if((screen.height - (topoffset * 100 + 20)) < 200 ){
+          leftoffset++;
+          topoffset = 0;
+       
+      }else{
+        
+        topoffset++
+        }
+      }
+     
       _apps[app.name] = {
-        left: 20,
-        top: i * 100 + 20,
+        left: leftoffset*80 + 20,
+        top: topoffset * 100 + 20,
         name: app.name,
         icon: app.icon,
         btnTarget:app.btnTarget
       };
+    
     });
 
     setApps(_apps);
@@ -53,7 +72,7 @@ const Apps = () => {
   return (
     <Box
       ref={drop}
-      sx={{ width: "100%", height: "100%", position: "relative" }}
+      sx={{ width: "100%", height: "100%", position: "relative"}}
     >
       {Object.keys(apps).map((key) => {
         const { left, top, name, icon,btnTarget } = apps[key];

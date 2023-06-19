@@ -155,7 +155,7 @@ import {
             
             color:"#ffba00"
           }}>Projects</h1>
-          <hr style={{width:"100%", "background-color":"#000"}}/>   
+          <hr color={"#ffba00"} style={{width:"100%"}}/>   
           <h2 style={{
             margin:0
           }}>

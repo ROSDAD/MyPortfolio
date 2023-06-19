@@ -25,7 +25,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
   const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="down" ref={ref} {...props} />;
   });
-  const [openModal, setOpen] = React.useState(false);
+  const [openModal, setOpen] = React.useState(true);
 
   const handleClickOpen = () => {
     handleClose();
@@ -89,6 +89,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           border: "1px solid #525252",
           borderTopRightRadius: 5,
           borderTopLeftRadius: 5,
+          overflowY:"auto"
         }}
       >
         {/* Search */}
@@ -156,6 +157,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
         <MenuLabel title="Recommended" buttonText="More >" />
 
         {/* Recommended Apps */}
+        
         <Grid
           container
           direction="row"
@@ -163,6 +165,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           justifyContent="flex-start"
           spacing={2}
           sx={{ px: 2 }}
+          
         >
           {recommendedApps.map((app, i) => (
             <Grid item key={app.name} xs={12} lg={6}>
@@ -197,6 +200,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
             </Grid>
           ))}
         </Grid>
+        
       </Box>
 
       {/* User */}

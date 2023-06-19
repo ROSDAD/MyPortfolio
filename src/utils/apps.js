@@ -29,7 +29,7 @@ import Github from "../../public/icons/apps/Github.ico"
 import Linkedin from "../../public/icons/apps/Linkedin.ico"
 import Youtube from "../../public/icons/apps/Youtube.ico"
 import GoogleScholar from "../../public/icons/apps/Google Scholar.ico"
-
+import ContactMe from "../../public/icons/apps/Contact Me.ico"
 
 export const desktopApps = [
   { name: "Skills", icon: Folder,btnTarget:"skills" },
@@ -40,7 +40,7 @@ export const desktopApps = [
   { name: "Activities", icon: Folder,btnTarget:"activities" },
   
   
-  { name: "Contact Me", icon: Chrome,btnTarget:"contactme" },
+  { name: "Contact Me", icon: ContactMe,btnTarget:"contactme" },
 ];
 
 export const pinnedApps = [
