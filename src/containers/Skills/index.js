@@ -21,52 +21,37 @@ import {
     Toolbar,
     Container,
     Slide,
-    Chip
+    Chip,
+    Item
 
     
   } from "@mui/material";
+  import { Row, Col} from 'react-bootstrap';
   import React, {useState} from "react";
   import { PowerSettingsNewIcon } from "@mui/icons-material/PowerSettingsNew";
   import CloseIcon from '@mui/icons-material/Close';
   import CropSquareIcon from '@mui/icons-material/CropSquare';
   import RemoveIcon from '@mui/icons-material/Remove';
   import SearchIcon from "@mui/icons-material/Search";
-  import { pinnedApps, recommendedApps } from "../../utils/apps";
+  import { pinnedApps, recommendedApps,programmingLanguages,frameworks,dataManagement,operatingSystems,others } from "../../utils/apps";
   import Folder from "../../../public/icons/system/Folder.ico";
   import menuIcon from "../../utils/apps"
+  import skills from "../../../public/skills.png"
 
-
+  
+ 
 
   const Skills = ({ open, ProjectWindow, handleClose }) => {
     const theme = useTheme();
     
   
-    const MenuLabel = ({ title, buttonText }) => (
-      <Stack
-        direction="row"
-        alignItems="center"
-        justifyContent="space-between"
-        sx={{ px: { xs: 2, lg: 4 }, mb: 2 }}
-      >
-        <Typography variant="body2">{title}</Typography>
-  
-        <Button
-          size="small"
-          variant="contained"
-          disableElevation
-          sx={{
-            ...theme.typography.caption,
-            textTransform: "inherit",
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-            "&:hover": {
-              backgroundColor: "rgba(255, 255, 255, 0.2)",
-            },
-          }}
-        >
-          {buttonText}
-        </Button>
-      </Stack>
+    const Skills = ({ name, icon, bgColor, tColor,fLetter }) => (
+      // if(icon!=""){
+        
+      <Chip style={{ margin:5,backgroundColor:{bgColor},color:{tColor} }} alt="N"avatar={<Avatar alt="N" src={icon}>{fLetter}</Avatar>} label={name} />
+      
     );
+    
   
     const MenuContent = () => (
       <Stack
@@ -79,6 +64,7 @@ import {
             height: "92vh",
           },
         }}
+        
       >
           <Stack
           justifyContent="center"
@@ -139,20 +125,85 @@ import {
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
-            overflowY:"auto"
+            overflowY:"auto",
+            
           }}
-        >
           
+        >
+        <img src={skills} style={{
+          display:"block",
+          marginLeft:"auto",
+          marginRight:"auto",
+          width:"300px",
+          height:"200px",
+        
+          }}/>
+          <hr style={{ textAlign:"center",width:"100%" }}/>
         <Grid container xs={12} sm={12} md={12} lg={12} xl={12}
         sx={{px: 3,}}
         style={{
           
           margin:0,
           width:"100%",
-         justifyContent:"center"
+         justifyContent:"center",
+         
         }}>
+          
+          <Row>
+            <Col>
+            <div style={{"height":"65px"}}>
+              <h4 style={{textAlign:"center"}}>Programming Languages</h4>
+            </div>
+              {programmingLanguages.map((skill, i) => (
+                <Skills name={skill.name} icon={skill.icon} bgColor={skill.bgColor} tColor={skill.tColor} fLetter={skill.name.substring(0, 1)} />
+              ))}
+      
+            
+            </Col>
+            <Col>
+            <div style={{"height":"65px"}}>
+            <h4 style={{textAlign:"center"}}>Frameworks</h4>
+            </div>
+            {frameworks.map((skill, i) => (
+                <Skills name={skill.name} icon={skill.icon} bgColor={skill.bgColor} tColor={skill.tColor} fLetter={skill.name.substring(0, 1)} />
+              ))}
+        
+            </Col>
+            <Col>
+            <div style={{"height":"65px"}}>
+            <h4 style={{textAlign:"center"}}>Data Management</h4>
+            </div>
+            {dataManagement.map((skill, i) => (
+                <Skills name={skill.name} icon={skill.icon} bgColor={skill.bgColor} tColor={skill.tColor} fLetter={skill.name.substring(0, 1)} />
+              ))}
+            </Col>
+            <Col>
+            <div style={{"height":"65px"}}>
+            <h4 style={{textAlign:"center"}}>Operating Systems</h4>
+            </div>
+            {operatingSystems.map((skill, i) => (
+                <Skills name={skill.name} icon={skill.icon} bgColor={skill.bgColor} tColor={skill.tColor} fLetter={skill.name.substring(0, 1)} />
+              ))}
+            </Col>
+        
+            
+            
+            
+            <Col>
+            <div style={{"height":"65px"}}>
+            <h4 style={{textAlign:"center"}}>Others</h4>
+            </div>
+            {others.map((skill, i) => (
+                <Skills name={skill.name} icon={skill.icon} bgColor={skill.bgColor} tColor={skill.tColor} fLetter={skill.name.substring(0, 1)} />
+              ))}
+           
+            </Col>
+            </Row>
 
-         <Chip style={{ margin:5 }} avatar={<Avatar alt="NodeJS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunflower_from_Silesia2.jpg/1200px-Sunflower_from_Silesia2.jpg" />} label="primary" color="primary" />
+
+            
+          {/* </Grid> */}
+         
          
          
           

@@ -1,6 +1,7 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const colors = {
   main: "#0078d4",

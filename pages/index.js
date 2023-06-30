@@ -6,6 +6,7 @@ import Apps from "../src/containers/Apps";
 import LockScreen from "../src/containers/Lockscreen";
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
+
 const Home = () => {
   const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="down" ref={ref} {...props} />;
@@ -52,14 +53,15 @@ const Home = () => {
             backdropFilter: "blur(5px)",
             fontFamily:"Merriweather",
             // border: "1px solid #525252",
+            borderRadius:"50px",
             fontWeight:"Bolder",
             fontSize:"22px",
-            borderTopRightRadius: 5,
-            borderTopLeftRadius: 5,
+            // borderTopRightRadius: 5,
+            // borderTopLeftRadius: 5,
           }}
         >
         
-          <p>Hi! You're Now Signed In As <u style={{ fontSize:25}}>Roshan Dadlani</u>. <br/>Feel Free To Roam Around! 😄 <br/><br/> <span style={{ fontSize:"15px" }}>Created With ❤️ & ☕</span></p>
+          <p>Hi! You're Now Signed In As <br/><u style={{ fontSize:25}}>Roshan Dadlani</u>. <br/>Feel Free To Roam Around! 😄 <br/><br/> <span style={{ fontSize:"15px" }}>Created With ❤️ & ☕</span></p>
         </Box>
       <Box sx={{ height: "100%", }}>
         <Apps />
