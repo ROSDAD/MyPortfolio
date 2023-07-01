@@ -20,7 +20,7 @@ const Apps = () => {
       
       console.log(screen.height - (topoffset * 100 + 20));
       if(i!=0){
-      if((screen.height - (topoffset * 100 + 20)) < 200 ){
+      if((screen.height - (topoffset * 100 + 20)) < 350 ){
           leftoffset++;
           topoffset = 0;
        

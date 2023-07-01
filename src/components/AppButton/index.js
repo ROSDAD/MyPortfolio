@@ -55,11 +55,17 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
     }
     else if(btnTarget === "contactme"){
       setContactWindow(e.currentTarget);
+    }else if(btnTarget === "resume"){
+      window.open(
+        'https://www.google.co.in/',
+        '_blank' 
+      );
+      
     }
   };
 
   const handleClose = () => {
-    console.log("in here")
+    
 
     setProjectWindow(null);
     setSkillsWindow(null);

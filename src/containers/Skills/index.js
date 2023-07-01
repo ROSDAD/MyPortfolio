@@ -37,6 +37,7 @@ import {
   import Folder from "../../../public/icons/system/Folder.ico";
   import menuIcon from "../../utils/apps"
   import skills from "../../../public/skills.png"
+  import SkillIcon from "../../../public/icons/system/skills.ico";
 
   
  
@@ -95,7 +96,7 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10,marginBottom:4 }} src={Folder}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={SkillIcon}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Skills</Typography>

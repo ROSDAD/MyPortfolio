@@ -30,7 +30,8 @@ const Home = () => {
         height: "100vh",
         width: "100vw",
         overflow: "hidden",
-        background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(${Background})`,
+        
         backgroundPosition: "center center",
         backgroundSize: "cover",
       }}

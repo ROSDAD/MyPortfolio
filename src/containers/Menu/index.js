@@ -75,8 +75,10 @@ const Menu = ({ open, anchorEl, handleClose }) => {
         },
         [theme.breakpoints.up("md")]: {
           width: 500,
-          height: "90vh",
+          height: "85vh",
         },
+       
+        
       }}
     >
       {/* Apps */}
@@ -89,7 +91,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           border: "1px solid #525252",
           borderTopRightRadius: 5,
           borderTopLeftRadius: 5,
-          overflowY:"auto"
+          // overflowY:"auto"
         }}
       >
         {/* Search */}
@@ -199,6 +201,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
               </Button>
             </Grid>
           ))}
+          
         </Grid>
         
       </Box>
@@ -221,6 +224,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           alignItems="center"
           justifyContent="space-between"
           sx={{ px: { xs: 2, lg: 4 } }}
+
         >
           <Button
             direction="row"
@@ -254,6 +258,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
       PaperProps={{
         style: { backgroundColor: "transparent", boxShadow: "none" },
       }}
+      style={{overflowY:"hidden"}}
       keepMounted
     >
       <MenuContent />

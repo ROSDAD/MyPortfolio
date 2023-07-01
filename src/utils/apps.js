@@ -5,7 +5,10 @@ import Folder from "../../public/icons/system/Folder.ico";
 import Windows from "../../public/icons/system/Windows.ico";
 import Cortana from "../../public/icons/system/Cortana.ico";
 import Trash from "../../public/icons/system/Trash.ico";
-import Signin from "../../public/icons/system/signin.ico"
+import Signin from "../../public/icons/system/signin.ico";
+import Skills from "../../public/icons/system/skills.ico";
+import Projects from "../../public/icons/system/projects.ico";
+import PDF from "../../public/icons/system/PDF1.ico";
 // Apps
 import AdobePhotoshop from "../../public/icons/apps/AdobePhotoshop.ico";
 import Chrome from "../../public/icons/apps/Chrome.ico";
@@ -67,8 +70,8 @@ import windows from "../../public/icons/skills/windows.png"
 
 
 export const desktopApps = [
-  { name: "Skills", icon: Folder,btnTarget:"skills" },
-  { name: "Projects", icon: Folder,btnTarget:"projects" },
+  { name: "Skills", icon: Skills,btnTarget:"skills" },
+  { name: "Projects", icon: Projects  ,btnTarget:"projects" },
   { name: "Experience", icon: Folder,btnTarget:"experience" },
   
   { name: "Certifications", icon: Folder,btnTarget:"certifications" },
@@ -76,6 +79,7 @@ export const desktopApps = [
   
   
   { name: "Contact Me", icon: ContactMe,btnTarget:"contactme" },
+  { name: "Resume", icon: PDF,btnTarget:"resume" },
 ];
 
 export const pinnedApps = [
