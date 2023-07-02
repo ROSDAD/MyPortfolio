@@ -38,7 +38,7 @@ import {
   import menuIcon from "../../utils/apps"
   import skills from "../../../public/skills.png"
   import SkillIcon from "../../../public/icons/system/skills.ico";
-
+  import Background from "../../../public/projectBackground.png";
   
  
 
@@ -59,7 +59,9 @@ import {
         sx={{
           width: "100vw",
           height: "100vh",
-          
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+          backgroundRepeat:"no-repeat",
+            backgroundSize:"cover",
           [theme.breakpoints.up("lg")]: {
             width: "100vw",
             height: "92vh",
@@ -121,8 +123,8 @@ import {
             p: 6,
             flex: 1,
             
-            backgroundColor: `${theme.palette.background.grey}F7`,
-            backdropFilter: "blur(5px)",
+            // backgroundColor: `${theme.palette.background.grey}F7`,
+            backdropFilter: "blur(15px)",
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
@@ -150,7 +152,11 @@ import {
          
         }}>
           
-          <Row>
+          <Row style={{
+            backgroundColor:"rgba(50, 50, 50, 0.5)",
+            borderRadius:"20px",
+            padding:20,
+          }}>
             <Col>
             <div style={{"height":"65px"}}>
               <h4 style={{textAlign:"center"}}>Programming Languages</h4>

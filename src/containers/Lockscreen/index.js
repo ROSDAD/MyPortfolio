@@ -37,7 +37,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
         TransitionComponent={Transition}
         keepMounted
       >
-    
+   
     <img
       style={{ maxWidth: "100%", height: '100%' }}
       src={lockscreenBg}
@@ -60,37 +60,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
     <br/>
     <h3>Click Here To Unlock</h3>
     </div>
-        {/* <AppBar sx={{ position: 'relative' }}> */}
-          {/* <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              
-              aria-label="close"
-            >
-              <CloseIcon />
-            </IconButton>
-            <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              Sound
-            </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
-              save
-            </Button>
-          </Toolbar> */}
-        {/* </AppBar> */}
-        {/* <List>
-          <ListItem button>
-            <ListItemText primary="Phone ringtone" secondary="Titania" />
-          </ListItem>
-          <Divider />
-          <ListItem button>
-            <ListItemText
-              primary="Default notification ringtone"
-              secondary="Tethys"
-            />
-          </ListItem>
-        </List> */}
+        
       </Dialog>
   
   )

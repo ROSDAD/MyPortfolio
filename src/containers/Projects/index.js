@@ -25,6 +25,7 @@ import {
     
   } from "@mui/material";
   import React, {useState} from "react";
+  import { Row, Col, Card,ListGroup} from 'react-bootstrap';
   import { PowerSettingsNewIcon } from "@mui/icons-material/PowerSettingsNew";
   import CloseIcon from '@mui/icons-material/Close';
   import CropSquareIcon from '@mui/icons-material/CropSquare';
@@ -33,13 +34,21 @@ import {
   import { pinnedApps, recommendedApps } from "../../utils/apps";
   import Folder from "../../../public/icons/system/Folder.ico";
   import ProjectIcon from "../../../public/icons/system/projects.ico";
-
+  import Background from "../../../public/projectBackground.png";
 
 
 
   const Projects = ({ open, ProjectWindow, handleClose }) => {
     const theme = useTheme();
-    
+    const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   
     const MenuLabel = ({ title, buttonText }) => (
       <Stack
@@ -69,11 +78,14 @@ import {
     );
   
     const MenuContent = () => (
+      <div>
       <Stack
         sx={{
           width: "100vw",
           height: "100vh",
-          
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+          backgroundRepeat:"no-repeat",
+            backgroundSize:"cover",
           [theme.breakpoints.up("lg")]: {
             width: "100vw",
             height: "92vh",
@@ -88,6 +100,7 @@ import {
             backgroundColor: theme.palette.background.darkgrey,
             border: "1px solid #525252",
             borderTop: "none",
+            
             borderBottomLeftRadius: 5,
             borderBottomRightRadius: 5,
           }}
@@ -131,15 +144,18 @@ import {
         {/* Apps */}
         <Box
           sx={{
+            
             p: 6,
             flex: 1,
             paddingTop:0,
-            backgroundColor: `${theme.palette.background.grey}F7`,
-            backdropFilter: "blur(5px)",
+            // backgroundColor: `${theme.palette.background.grey}F7`,
+            backdropFilter: "blur(10px)",
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
-            overflowY:"auto"
+            overflowY:"auto",
+            
+            
           }}
         >
           
@@ -149,14 +165,255 @@ import {
           margin:0,
           width:"100%",
           
+          
         }}>
          
           <Stack style={{ width:"100%" }}>
           <h1 style={{
             
-            color:"#ffba00"
+            color:"#ffba00",
+            textAlign:"center"
           }}>Projects</h1>
-          <hr color={"#ffba00"} style={{width:"100%"}}/>   
+          <hr color={"#ffba00"} style={{width:"100%"}}/>  
+
+
+          <Row style={{}} xs={1} md={2} lg={3} xl={4}> 
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Practo Clone</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>React.js, Redux, JavaScript, HTML, CSS</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Click-To-Cart</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Java, MySQL, OpenCage, Java Swing, SMTP</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>MIME: Movement In Modern Electronics</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Django, Python, JavaScript, MediaPipe, HTML, CSS, OpenCV, Tensorflow</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Distributed File System (DFS)</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Python, Distributed File Systems, Socket Programming</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Deppy: Your Virtual Companion</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Django, Python, JavaScript, Natural Language Processing (NLP), 
+                    Web Scraping, HTML, CSS, Machine Learning, TensorFlow</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Background}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>TweeSent - Sentiment Analysis Of COVID’19 Tweets (IBM HACK CHALLENGE'20)</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Django, Python, JavaScript, Natural Language Processing (NLP), 
+                    Tweepy, HTML, CSS, Machine Learning, TextBlob</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+      
+          </Col>
+            
+
+          </Row>
+
+
+
+
+
+
+
           <h2 style={{
             margin:0
           }}>
@@ -399,6 +656,7 @@ import {
         {/* User */}
         
       </Stack>
+      </div>
     );
   
     return (
