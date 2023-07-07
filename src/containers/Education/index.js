@@ -32,12 +32,12 @@ import {
   import SearchIcon from "@mui/icons-material/Search";
   import { pinnedApps, recommendedApps } from "../../utils/apps";
   import Folder from "../../../public/icons/system/Folder.ico";
-  import experienceIcon from "../../../public/icons/system/experience.ico";
+  import EducationIcon from "../../../public/icons/apps/Education.ico";
   import Background from "../../../public/projectBackground.png";
 
 
 
-  const Experience = ({ open, ProjectWindow, handleClose }) => {
+  const Education = ({ open, ProjectWindow, handleClose }) => {
     const theme = useTheme();
     
   
@@ -73,7 +73,7 @@ import {
         sx={{
           width: "100vw",
           height: "100vh",
-          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(${Background})`,
           backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
           [theme.breakpoints.up("lg")]: {
@@ -111,10 +111,10 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10 }} src={experienceIcon}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={EducationIcon}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
-              <Typography>Experience</Typography>
+              <Typography>Education</Typography>
             </Button>
             <div>
             <IconButton size="small" onClick={handleClose}>
@@ -135,7 +135,7 @@ import {
           sx={{
             p: 6,
             flex: 1,
-            paddingTop:0,
+            paddingTop:3,
             // backdropFilter: "blur(15px)",
             // backgroundColor: `${theme.palette.background.grey}F7`,
             backdropFilter: "blur(15px)",
@@ -146,7 +146,7 @@ import {
           }}
         >
           
-        <Grid container xs={12} sm={12} md={12} lg={12} xl={12}
+          <Grid container xs={12} sm={12} md={12} lg={12} xl={12}
         
         style={{
           margin:0,
@@ -154,176 +154,94 @@ import {
           
         }}>
          <h1 style={{
-            paddingTop:15,
+            
             color:"#ffba00",
             textAlign:"center"
-          }}>Experience</h1>
+          }}>Education</h1>
           <Stack style={{ width:"100%" }}>
             
           <hr style={{width:"100%", "background-color":"#000"}}/>   
           <h4 style={{
             margin:0
           }}>
-            Weddingz Bell Pvt. Ltd.  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>Pune, IN</i></span>
+            Northeastern University, Boston  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>GPA: 3.76/4.0</i></span>
             
           </h4>
           
           <p 
           style={{
             margin:0,
-            fontSize:14,
-            paddingBottom:15,
+            fontSize:20,
+            // paddingBottom:15,
             color:"#ffba00",
           }}>
-            <i>Co-Founder, Hiring Manager, Full Stack Web Developer 
+            <i>Master of Science in Information Systems 
             <span style={{
               float:"right",
-              
+              fontSize:18
             }}>
-            Dec 2020 – Mar 2023
+            Sep 2022 – May 2024
             </span>
            </i>
             
           </p>
-          
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Recognized a problem to consolidate the plan of all wedding events in one place.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Initiated an innovative idea to plan all wedding events using 
-            distribution algorithms as per the user’s budget.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Raised and patented a company worth $6,100 (₹500,000).
 
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Hired a team of 3 and developed the website and received a collaborative industry experience in MVC Framework, Project 
-Management and Business Analysis.
-            </p>
-          </li>
-          </ul>
+          <p 
+          style={{
+            margin:0,
+            fontSize:15,
+            paddingBottom:15,
+            color:"#fff",
+          }}>
+            <i><b>Coursework:</b> Data Science, Program Structures and Algorithms, Web Design, Application Engineering and Development 
+           </i>
+            
+          </p>
+
           </Stack>
-          
           <Stack style={{ width:"100%" }}>
-            
-            <hr style={{width:"100%", "background-color":"#000"}}/>   
-            <h4 style={{
-              margin:0
-            }}>
-              eWebsuite Technologies Pvt. Ltd.  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>Mumbai, IN</i></span>
-              
-            </h4>
-            
-            <p 
-            style={{
-              margin:0,
-              fontSize:14,
-              paddingBottom:15,
-              color:"#ffba00",
-            }}>
-              <i>Full Stack Web Developer Intern 
-              <span style={{
-                float:"right",
-                
-              }}>
-              Sep 2020 – Nov 2020
-              </span>
-             </i>
-              
-            </p>
-            
-          <ul style={{ margin:0 }}>
-            <li>
-              <p style={{
-                "text-align":"justify"
-              }}>
-              Transformed an on-site education institution to a hybrid by creating Online Education Portal using Django.
-              </p>
-            </li>
-            <li>
-              <p style={{
-                "text-align":"justify"
-              }}>
-              Developed a visualization to evaluate the statistics of about 70 students by Chart.js. 
-              </p>
-            </li>
-            <li>
-              <p style={{
-                "text-align":"justify"
-              }}>
-              Embedded a chatbox using Python Socket allowing students to communicate with teachers and vice-versa.
-  
-              </p>
-            </li>
-            
-            </ul>
-            </Stack>
-            <Stack style={{ width:"100%" }}>
             
           <hr style={{width:"100%", "background-color":"#000"}}/>   
           <h4 style={{
             margin:0
           }}>
-            Smart Consultant Pvt. Ltd. Co.  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>Mumbai, IN</i></span>
+            University of Mumbai, India  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>GPA: 8.17/10</i></span>
             
           </h4>
           
           <p 
           style={{
             margin:0,
-            fontSize:14,
-            paddingBottom:15,
+            fontSize:20,
+            // paddingBottom:15,
             color:"#ffba00",
           }}>
-            <i>Project Intern 
+            <i>Bachelor of Engineering in Computer Engineering 
             <span style={{
               float:"right",
-              
+              fontSize:18
             }}>
-            Jan 2020 – Apr 2020
+            Aug 2018 – May 2022
             </span>
            </i>
             
           </p>
-          
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Introduced a Hotel Management System in collaboration with a team that 
-            allows customers to book and cancel rooms on the portal.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Included an online Booking Payment Gateway improving 
-            data integrity and reducing paperwork by about 30%.
 
-            </p>
-          </li>
-          
-          </ul>
+          <p 
+          style={{
+            margin:0,
+            fontSize:15,
+            paddingBottom:15,
+            color:"#fff",
+          }}>
+            <i><b>Coursework:</b> Data Structures and Algorithms, Analysis of Algorithms, 
+            Operating Systems, Distributed Computing, Web Development, Object Oriented Programming
+           </i>
+            
+          </p>
+
           </Stack>
+          
 
 
 
@@ -372,5 +290,5 @@ Management and Business Analysis.
     );
   };
   
-  export default Experience;
+  export default Education;
   

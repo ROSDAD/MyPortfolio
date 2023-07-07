@@ -5,10 +5,14 @@ import Folder from "../../public/icons/system/Folder.ico";
 import Windows from "../../public/icons/system/Windows.ico";
 import Cortana from "../../public/icons/system/Cortana.ico";
 import Trash from "../../public/icons/system/Trash.ico";
-import Signin from "../../public/icons/system/signin.ico";
+import Signin from "../../public/icons/system/signin.png";
 import Skills from "../../public/icons/system/skills.ico";
 import Projects from "../../public/icons/system/projects.ico";
 import PDF from "../../public/icons/system/PDF1.ico";
+import Activities from "../../public/icons/system/activities.ico";
+import Experience from "../../public/icons/system/experience.ico";
+import Certifications from "../../public/icons/system/certifications.ico";
+import Education from "../../public/icons/apps/Education.ico";
 // Apps
 import AdobePhotoshop from "../../public/icons/apps/AdobePhotoshop.ico";
 import Chrome from "../../public/icons/apps/Chrome.ico";
@@ -34,6 +38,8 @@ import Youtube from "../../public/icons/apps/Youtube.ico"
 import GoogleScholar from "../../public/icons/apps/Google Scholar.ico"
 import ContactMe from "../../public/icons/apps/Contact Me.ico"
 import Slack from "../../public/icons/apps/Slack.ico"
+import Instagram from "../../public/icons/apps/Instagram.ico"
+import Outlook from "../../public/icons/apps/Outlook.ico"
 
 import angularJs from "../../public/icons/skills/angularjs.png"
 import aws from "../../public/icons/skills/aws.png"
@@ -65,17 +71,18 @@ import restapi from "../../public/icons/skills/restapi.png"
 import springboot from "../../public/icons/skills/springboot.png"
 import sql from "../../public/icons/skills/sql.png"
 import windows from "../../public/icons/skills/windows.png"
-
+import uipath from "../../public/icons/skills/uipath.png"
 
 
 
 export const desktopApps = [
+  { name: "Education", icon: Education,btnTarget:"education" },
   { name: "Skills", icon: Skills,btnTarget:"skills" },
   { name: "Projects", icon: Projects  ,btnTarget:"projects" },
-  { name: "Experience", icon: Folder,btnTarget:"experience" },
+  { name: "Experience", icon: Experience,btnTarget:"experience" },
   
-  { name: "Certifications", icon: Folder,btnTarget:"certifications" },
-  { name: "Activities", icon: Folder,btnTarget:"activities" },
+  { name: "Certifications", icon: Certifications,btnTarget:"certifications" },
+  { name: "Activities", icon: Activities,btnTarget:"activities" },
   
   
   { name: "Contact Me", icon: ContactMe,btnTarget:"contactme" },
@@ -83,45 +90,30 @@ export const desktopApps = [
 ];
 
 export const pinnedApps = [
-  // { name: "Adobe Photoshop", icon: AdobePhotoshop },
-  // { name: "Google Chrome", icon: Chrome },
-  // { name: "Discord", icon: Discord },
-  // { name: "Google Docs", icon: Docs },
-  // { name: "Microsoft Edge", icon: Edge },
-  // { name: "Email", icon: Email },
-  // { name: "Git", icon: Git },
-  // { name: "Node JS", icon: Nodejs },
-  // { name: "Microsoft Word", icon: Word },
-  // { name: "MS Paint", icon: Paint },
-  // { name: "Popcorn Time", icon: PopcornTime },
-  // { name: "Powershell", icon: Powershell },
-  // { name: "Python", icon: Python },
-  // { name: "Spotify", icon: Spotify },
-  // { name: "Steam", icon: Steam },
-  // { name: "Sticky Notes", icon: StickyNote },
-  // { name: "VLC Player", icon: VLC },
-  // { name: "VS Code", icon: VSCode },
+  { name: "Resume", icon: PDF,Link: "https://drive.google.com/file/d/1TXmP3YIHPBWy1m7XI7ckuT0KXtaiSuE-/view?usp=sharing" },
   { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
   { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/" },
-  { name: "Google Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
+  { name: "Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
   { name: "Youtube", icon: Youtube,Link: "https://www.youtube.com/@roshandadlani" },
-  { name: "Slack", icon: Slack,Link: "https://acmeco.slack.com/team/U042F3WRYJK" },
-  { name: "Discord", icon: Discord,Link: "https://discord.gg/TnZrHTyUPu" },
+  
+  
 ];
 
 export const recommendedApps = [
-  { name: "Google Chrome (1)", icon: Chrome },
-  { name: "Discord (ROSDAD)", icon: Discord },
-  { name: "Email (Gmail, Live, Yahoo)", icon: Email },
-  { name: "VS Code (Editor)", icon: VSCode },
-  { name: "Python (3.8.0)", icon: Python },
-  { name: "Node JS (16.9.0)", icon: Nodejs },
+  
+  { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/", subtext:"@roshan-dadlani" },
+  { name: "Slack", icon: Slack,Link: "https://acmeco.slack.com/team/U042F3WRYJK", subtext:"@ROSDAD" },
+  { name: "Outlook", icon: Outlook,Link: "mailto:dadlani.r@northeastern.edu", subtext:"@Roshan Dadlani" },
+  { name: "Discord", icon: Discord,Link: "https://discord.gg/TnZrHTyUPu", subtext:"@ROSDAD" },
+  { name: "Instagram", icon: Instagram,Link: "https://www.instagram.com/roshan_dadlani/", subtext:"@roshan_dadlani" },
+  
+  
 ];
 
 export const taskbarApps = [
   { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
   { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/" },
-  { name: "Google Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
+  { name: "Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
   { name: "Youtube", icon: Youtube,Link: "https://www.youtube.com/@roshandadlani" },
   { name: "Slack", icon: Slack,Link: "https://acmeco.slack.com/team/U042F3WRYJK" },
   { name: "Discord", icon: Discord,Link: "https://discord.gg/TnZrHTyUPu" },
@@ -175,6 +167,7 @@ export const others = [
   { name: "Azure", icon: azure,bgColor: "#fff",tColor:"#000" },
   { name: "Rest API", icon: restapi,bgColor: "#fff",tColor:"#000" },
   { name: "Docker", icon: docker,bgColor: "#fff",tColor:"#000" },
+  { name: "UiPath", icon: uipath,bgColor: "#fff",tColor:"#000" },
 ];
 
 export const cortanaIcon = Cortana;

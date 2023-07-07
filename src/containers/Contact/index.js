@@ -32,9 +32,11 @@ import {
   import SearchIcon from "@mui/icons-material/Search";
   import { pinnedApps, recommendedApps } from "../../utils/apps";
   import Folder from "../../../public/icons/system/Folder.ico";
-  import Background from "../../../public/contactme.jpg";
+  // import Background from "../../../public/contactme.jpg";
+  import Background from "../../../public/projectBackground.png";
   import { Row, Col,Card,CardDeck,CardBody,Container,Link,Icon, Form,Alert } from 'react-bootstrap';
   import emailjs from 'emailjs-com';
+  import ContactMeIcon from "../../../public/icons/apps/Contact Me.ico"
   // import { CDBInput, CDBCard, CDBCardBody, CDBIcon, CDBBtn, CDBLink, CDBContainer } from 'cdbreact';
 
   
@@ -130,7 +132,9 @@ const DangerAlert = () => {
         sx={{
           width: "100vw",
           height: "100vh",
-          
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(${Background})`,
+          backgroundRepeat:"no-repeat",
+          backgroundSize:"cover",
           
           [theme.breakpoints.up("lg")]: {
             width: "100vw",
@@ -167,7 +171,7 @@ const DangerAlert = () => {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10,marginBottom:4 }} src={Folder}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={ContactMeIcon}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Contact Me</Typography>
@@ -193,8 +197,8 @@ const DangerAlert = () => {
             flex: 1,
            
             // backgroundColor: `${theme.palette.background.grey}F7`,
-            background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
-            // backdropFilter: "blur(5px)",
+            // background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+            backdropFilter: "blur(15px)",
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
@@ -205,7 +209,13 @@ const DangerAlert = () => {
           
           <Container style={{"max-width":"600px",}}>
           
-      <Card style={{  margin:"auto",backgroundColor:"transparent",color:"#fff",backdropFilter: "blur(15px)", }}>
+      <Card style={{  margin:"auto",
+      // backgroundColor:"transparent",
+      color:"#fff",
+      backdropFilter: "blur(15px)",
+    backgroundColor:"rgba(50, 50, 50, 0.5)",
+    borderRadius:"20px",
+    }}>
       
         <SuccessAlert/>
         <DangerAlert/>
@@ -214,21 +224,26 @@ const DangerAlert = () => {
         <Form id="contact-form" ref={form} onSubmit={sendEmail}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name<span style={{color:"red"}}>*</span></Form.Label>
-            <Form.Control   name="from_name" type="text" placeholder="Enter email" />
+            <Form.Control   name="from_name" type="text" placeholder="Enter Name" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email Address<span style={{color:"red"}}>*</span></Form.Label>
-            <Form.Control   name="reply_mail" type="email" placeholder="Enter email" />
+            <Form.Control   name="reply_mail" type="email" placeholder="Enter Email" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Message<span style={{color:"red"}}>*</span></Form.Label>
             <Form.Control  name="message" as="textarea" rows={3} placeholder="Message" />
           </Form.Group>
+          <div style={{
           
-          <Button style={{backgroundColor:"#fdd166",color:"#fff",left:"44%"}} type="submit">
+          textAlign:"center"}}>
+          <Button style={{
+          backgroundColor:"#fdd166",
+          color:"#fff"}} type="submit">
             Submit
           </Button>
+          </div>
         </Form>
         <div style={{textAlign:"center"}}>
         <a>OR</a>

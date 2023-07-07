@@ -35,6 +35,12 @@ import {
   import Folder from "../../../public/icons/system/Folder.ico";
   import ProjectIcon from "../../../public/icons/system/projects.ico";
   import Background from "../../../public/projectBackground.png";
+  import Deppy from "../../../public/projects/deppy.png";
+  import MIME from "../../../public/projects/MIME.png";
+  import Tweesent from "../../../public/projects/Tweesent.png";
+  import Practo from "../../../public/projects/practo.png";
+  import Click2Cart from "../../../public/projects/click2cart.png";
+  import DFS from "../../../public/projects/DFS.png";
 
 
 
@@ -51,6 +57,8 @@ import {
   };
   
     const MenuLabel = ({ title, buttonText }) => (
+
+      
       <Stack
         direction="row"
         alignItems="center"
@@ -149,7 +157,7 @@ import {
             flex: 1,
             paddingTop:0,
             // backgroundColor: `${theme.palette.background.grey}F7`,
-            backdropFilter: "blur(10px)",
+            backdropFilter: "blur(15px)",
             border: "1px solid #525252",
             borderTopRightRadius: 5,
             borderTopLeftRadius: 5,
@@ -184,157 +192,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Background}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              // style={{ opacity: isHovered ? "0.6" : "1" }}
-            />
-            <Card.Body>
-              <Card.Title style={{
-                color:"#ffba00"
-              }}>Practo Clone</Card.Title>
-              <Card.Text>
-              <p 
-                style={{
-                  margin:0,
-                  fontSize:14
-                }}>
-                  <i>React.js, Redux, JavaScript, HTML, CSS</i>
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card>
-      
-          </Col>
-          <Col style={{marginBottom:50}}>
-            
-            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
-            {/* <Card.Img variant="top" src={Background} /> */}
-            <Card.Img
-              variant="top"
-              src={Background}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              // style={{ opacity: isHovered ? "0.6" : "1" }}
-            />
-            <Card.Body>
-              <Card.Title style={{
-                color:"#ffba00"
-              }}>Click-To-Cart</Card.Title>
-              <Card.Text>
-              <p 
-                style={{
-                  margin:0,
-                  fontSize:14
-                }}>
-                  <i>Java, MySQL, OpenCage, Java Swing, SMTP</i>
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card>
-      
-          </Col>
-
-          <Col style={{marginBottom:50}}>
-            
-            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
-            {/* <Card.Img variant="top" src={Background} /> */}
-            <Card.Img
-              variant="top"
-              src={Background}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              // style={{ opacity: isHovered ? "0.6" : "1" }}
-            />
-            <Card.Body>
-              <Card.Title style={{
-                color:"#ffba00"
-              }}>MIME: Movement In Modern Electronics</Card.Title>
-              <Card.Text>
-              <p 
-                style={{
-                  margin:0,
-                  fontSize:14
-                }}>
-                  <i>Django, Python, JavaScript, MediaPipe, HTML, CSS, OpenCV, Tensorflow</i>
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card>
-      
-          </Col>
-
-          <Col style={{marginBottom:50}}>
-            
-            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
-            {/* <Card.Img variant="top" src={Background} /> */}
-            <Card.Img
-              variant="top"
-              src={Background}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              // style={{ opacity: isHovered ? "0.6" : "1" }}
-            />
-            <Card.Body>
-              <Card.Title style={{
-                color:"#ffba00"
-              }}>Distributed File System (DFS)</Card.Title>
-              <Card.Text>
-              <p 
-                style={{
-                  margin:0,
-                  fontSize:14
-                }}>
-                  <i>Python, Distributed File Systems, Socket Programming</i>
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card>
-      
-          </Col>
-          <Col style={{marginBottom:50}}>
-            
-            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
-            {/* <Card.Img variant="top" src={Background} /> */}
-            <Card.Img
-              variant="top"
-              src={Background}
+              src={Deppy}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -355,14 +213,18 @@ import {
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+            
+              <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/Dr.-Deppy" target="_blank">GitHub</Card.Link>
+                <Card.Link href="https://link.springer.com/chapter/10.1007/978-981-16-6460-1_37" target="_blank">Research Paper</Card.Link>
+                <Card.Link href="https://www.youtube.com/watch?v=uun96RLq3P0" target="_blank">Youtube</Card.Link>
+              </ListGroup.Item>
+             
+             
             </ListGroup>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
+            {/* <Card.Body>
+              
+            </Card.Body> */}
           </Card>
       
           </Col>
@@ -372,7 +234,171 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Background}
+              src={MIME}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>MIME: Movement In Modern Electronics</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Django, Python, JavaScript, MediaPipe, HTML, CSS, OpenCV, Tensorflow</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+            
+                <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/ASL-1" target="_blank">GitHub</Card.Link>
+                <Card.Link href="https://ieeexplore.ieee.org/document/9673251" target="_blank">Research Paper 1</Card.Link>
+                <br/>
+                <Card.Link href="https://ieeexplore.ieee.org/document/9752213" target="_blank">Research Paper 2</Card.Link>
+                <Card.Link href="https://www.youtube.com/watch?v=VQsse7N2dCk" target="_blank">Youtube</Card.Link>
+                  </ListGroup.Item>
+             
+            </ListGroup>
+            {/* <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body> */}
+          </Card>
+      
+          </Col>
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Practo}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Practo Clone</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>MongoDB, Express.js, React.js, Node.js, Redux, JavaScript, HTML, CSS</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+            <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/Web-Design-Final-Project" target="_blank">GitHub</Card.Link>
+                
+              </ListGroup.Item>
+              {/* <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item> */}
+            </ListGroup>
+            {/* <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body> */}
+          </Card>
+      
+          </Col>
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Click2Cart}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Click-To-Cart</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Java, MySQL, OpenCage, Java Swing, SMTP</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/click-to-cart" target="_blank">GitHub</Card.Link>
+                
+              </ListGroup.Item>
+              {/* <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
+              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item> */}
+            </ListGroup>
+            {/* <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body> */}
+          </Card>
+      
+          </Col>
+
+          
+
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={DFS}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              // style={{ opacity: isHovered ? "0.6" : "1" }}
+            />
+            <Card.Body>
+              <Card.Title style={{
+                color:"#ffba00"
+              }}>Distributed File System (DFS)</Card.Title>
+              <Card.Text>
+              <p 
+                style={{
+                  margin:0,
+                  fontSize:14
+                }}>
+                  <i>Python, Distributed File Systems, Socket Programming</i>
+                </p>
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush" >
+              <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/DFS-using-Python.git" target="_blank" >GitHub</Card.Link>
+                </ListGroup.Item>
+            </ListGroup>
+            {/* <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body> */}
+          </Card>
+      
+          </Col>
+          
+          <Col style={{marginBottom:50}}>
+            
+            <Card style={{ width: '18rem',"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff",margin:"auto",height:"100%" }}>
+            {/* <Card.Img variant="top" src={Background} /> */}
+            <Card.Img
+              variant="top"
+              src={Tweesent}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -393,14 +419,16 @@ import {
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush" >
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item style={{"background-color": "rgba(255, 255, 255, 0.2)",color:"#fff"}}>Vestibulum at eros</ListGroup.Item>
+          
+              <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
+                <Card.Link href="https://github.com/ROSDAD/Sentiment-Analysis-1.git" target="_blank">GitHub</Card.Link>
+                <Card.Link href="https://www.youtube.com/watch?v=mIvGXdfe2J0" target="_blank">Youtube</Card.Link>
+              </ListGroup.Item>
             </ListGroup>
-            <Card.Body>
+            {/* <Card.Body>
               <Card.Link href="#">Card Link</Card.Link>
               <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
+            </Card.Body> */}
           </Card>
       
           </Col>
@@ -408,243 +436,9 @@ import {
 
           </Row>
 
+  
 
-
-
-
-
-
-          <h2 style={{
-            margin:0
-          }}>
-            Click-To-Cart - <span style={{ fontSize:15 }}><a href="https://github.com/ROSDAD/click-to-cart" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>
-            </span>
-            
-          </h2>
-          
-          <p 
-          style={{
-            margin:0,
-            fontSize:14
-          }}>
-            <i>Java, MySQL, OpenCage, Java Swing, SMTP</i>
-          </p>
-          <h4 
-          style={{
-            margin:0,
-            color:"#ffba00"
-          }}>
-            Sep 2022 - Dec 2022
-          </h4>
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Worked with over 23 Java Classes to develop an E-Commerce Clone Java Swing Application using Java.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Assisted users in ordering anything from the retail stores nearby and allow admins to control Cities,
-             Organizations and Departments.
-            </p>
-          </li>
-          </ul>
-          </Stack>
-          
-          <Stack style={{ width:"100%" }}>
-          <hr style={{width:"100%", "background-color":"#000"}}/>   
-          <h2 style={{
-            margin:0
-          }}>
-            
-        MIME: Movement In Modern Electronics - <span style={{ fontSize:15 }}>
-          <a href="https://github.com/ROSDAD/ASL-1" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>,
-          <a href="https://ieeexplore.ieee.org/document/9673251" target="_blank" style={{color:"#6666ff"}}><u> Research Paper 1</u></a>,
-          <a href="https://ieeexplore.ieee.org/document/9752213" target="_blank" style={{color:"#6666ff"}}><u> Research Paper 2</u></a>,
-          <a href="https://www.youtube.com/watch?v=VQsse7N2dCk" target="_blank" style={{color:"#6666ff"}}><u> Youtube</u></a>
-            </span>
-            
-          </h2>
-          
-          <p 
-          style={{
-            margin:0,
-            fontSize:14
-          }}>
-            <i>Django, Python, JavaScript, HTML, MediaPipe, CSS, OpenCV, Tensorflow</i>
-          </p>
-          <h4 
-          style={{
-            margin:0,
-            color:"#ffba00"
-          }}>
-            Aug 2021 - May 2022
-          </h4>
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Devised an application demonstrating the power of using hand gestures to control computer devices.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Used Computer Vision (OpenCV) and Media Pipe to plot and analyze points on the user’s hand.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Included a WebApp for the deaf and dumb allowing non-native speakers to grasp the language of the extraordinary.
-            </p>
-          </li>
-          </ul>
-          </Stack>
-
-
-          <Stack style={{ width:"100%" }}>
-          <hr style={{width:"100%", "background-color":"#000"}}/>   
-          <h2 style={{
-            margin:0
-          }}>
-            Distributed File System (DFS) - <span style={{ fontSize:15 }}><a href="https://github.com/ROSDAD/DFS-using-Python.git" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>
-            </span>
-            
-          </h2>
-          
-          <p 
-          style={{
-            margin:0,
-            fontSize:14
-          }}>
-            <i>Python, Distributed File Systems, Socket Programming</i>
-          </p>
-          <h4 
-          style={{
-            margin:0,
-            color:"#ffba00"
-          }}>
-            Jan 2022 - May 2022
-          </h4>
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Developed a Distributed File System and built the communication between 4 data centric servers using Python Socket.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Successfully demonstrated data consistency, server stability and data availability.
-            </p>
-          </li>
-          </ul>
-          </Stack>
-
-
-          <Stack style={{ width:"100%" }}>
-          <hr style={{width:"100%", "background-color":"#000"}}/>   
-          <h2 style={{
-            margin:0
-          }}>
-            
-            Deppy: Your Virtual Companion - <span style={{ fontSize:15 }}>
-          <a href="https://github.com/ROSDAD/Dr.-Deppy" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>,
-          <a href="https://link.springer.com/chapter/10.1007/978-981-16-6460-1_37" target="_blank" style={{color:"#6666ff"}}><u> Research Paper</u></a>,
-          <a href="https://www.youtube.com/watch?v=uun96RLq3P0" target="_blank" style={{color:"#6666ff"}}><u> Youtube</u></a>
-            </span>
-            
-          </h2>
-          
-          <p 
-          style={{
-            margin:0,
-            fontSize:14
-          }}>
-            <i>Django, Python, JavaScript, Natural Language Processing (NLP), Web Scraping, HTML, CSS, Machine Learning, TensorFlow</i>
-          </p>
-          <h4 
-          style={{
-            margin:0,
-            color:"#ffba00"
-          }}>
-            Aug 2020 - May 2021
-          </h4>
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Collaborated with a team of 4 to create a Web Application associated with an AI chatbot to counter depression by featuring a user-friendly chat using DNN, NLP and Machine Learning.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Impacted users to improve their mental health by 22%-38% by chatting with the bot and avoiding judgements of people.
-            </p>
-          </li>
-          
-          </ul>
-          </Stack>
-
-
-          <Stack style={{ width:"100%" }}>
-          <hr style={{width:"100%", "background-color":"#000"}}/>   
-          <h2 style={{
-            margin:0
-          }}>
-            
-            TweeSent - Sentiment Analysis Of COVID’19 Tweets (IBM HACK CHALLENGE'20) - <span style={{ fontSize:15 }}>
-          <a href="https://github.com/ROSDAD/Sentiment-Analysis-1.git" target="_blank" style={{color:"#6666ff"}}><u>GitHub</u></a>,
-          <a href="https://www.youtube.com/watch?v=mIvGXdfe2J0" target="_blank" style={{color:"#6666ff"}}><u> Youtube</u></a>
-            </span>
-            
-          </h2>
-          
-          <p 
-          style={{
-            margin:0,
-            fontSize:14
-          }}>
-            <i>Django, Python, JavaScript, Natural Language Processing (NLP), Tweepy, HTML, CSS, Machine Learning, TextBlob</i>
-          </p>
-          <h4 
-          style={{
-            margin:0,
-            color:"#ffba00"
-          }}>
-            May 2020 - Jun 2020
-          </h4>
-        <ul style={{ margin:0 }}>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Participated in IBM HACK CHALLENGE 2020 Hackathon to create a sentiment analysis application.
-            </p>
-          </li>
-          <li>
-            <p style={{
-              "text-align":"justify"
-            }}>
-            Used Tweepy to fetch Realtime Tweets and analyzed sentiments based on Covid-19 using NLP.
-            </p>
-          </li>
-          
-          </ul>
+         
           </Stack>
 
           <hr style={{width:"100%", "background-color":"#000"}}/> 
@@ -660,24 +454,7 @@ import {
     );
   
     return (
-      // <Popover
-      //   open={open}
-      //   ProjectWindow={ProjectWindow}
-      //   onClose={handleClose}
-      //   anchorOrigin={{
-      //     vertical: "top",
-      //     horizontal: "center",
-      //   }}
-      //   transformOrigin={{ vertical: "center", horizontal: "center" }}
-      // PaperProps={{
-      //   style: { backgroundColor: "transparent", boxShadow: "none" },
-      // }}
-      // keepMounted>
-      //   <MenuContent />
-        
-        
-
-      // </Popover>
+   
       <Dialog
         fullScreen
         open={open}

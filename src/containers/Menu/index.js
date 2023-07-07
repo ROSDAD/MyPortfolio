@@ -140,17 +140,19 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                 },
               }}
             >
+              <a target="_blank" href={app.Link} style={{ color:"#fff",textDecoration:"none"}}>
               <Stack
                 spacing={1}
                 direction="column"
                 alignItems="center"
                 justifyContent="center"
               >
-                <a target="_blank" href={app.Link}>
+
                     <img src={app.icon} alt={app.name} style={{ height: 30 }} />
-                  </a>
+                  
                 <Typography variant="caption">{app.name}</Typography>
               </Stack>
+              </a>
             </Button>
           ))}
         </Stack>
@@ -183,9 +185,11 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                   },
                 }}
               >
+                <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
                 <Stack direction="row" alignItems="center" spacing={2}>
+                
                   <img src={app.icon} alt={app.name} style={{ height: 30 }} />
-
+                
                   <Stack alignItems="flex-start">
                     <Typography variant="caption" sx={{ color: "#fff" }}>
                       {app.name}
@@ -194,10 +198,11 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                       variant="caption"
                       sx={{ color: theme.palette.primary.light }}
                     >
-                      Recently Added
+                      {app.subtext}
                     </Typography>
                   </Stack>
                 </Stack>
+                </a>
               </Button>
             </Grid>
           ))}

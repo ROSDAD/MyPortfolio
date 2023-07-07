@@ -46,11 +46,13 @@ const MenuBar = () => {
         </MenuButton> */}
 
         {taskbarApps.map((app, i) => (
+          <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
           <MenuButton key={i}>
-            <a target="_blank" href={app.Link}>
-              <img src={app.icon} alt={app.name} style={{ height: 26 }} />
-            </a>
+           
+              <img key={i} src={app.icon} alt={app.name} style={{ height: 26 }} />
+            
           </MenuButton>
+          </a>
         ))}
       </Stack>
 

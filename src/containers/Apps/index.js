@@ -20,7 +20,7 @@ const Apps = () => {
       
       console.log(screen.height - (topoffset * 100 + 20));
       if(i!=0){
-      if((screen.height - (topoffset * 100 + 20)) < 350 ){
+      if((screen.height - (topoffset * 100 + 20)) < 400 ){
           leftoffset++;
           topoffset = 0;
        
@@ -77,7 +77,6 @@ const Apps = () => {
       {Object.keys(apps).map((key) => {
         const { left, top, name, icon,btnTarget } = apps[key];
 
-        console.log(apps[key]);
 
         return (
           <AppButton

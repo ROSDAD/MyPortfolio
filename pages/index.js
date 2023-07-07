@@ -6,8 +6,6 @@ import Apps from "../src/containers/Apps";
 import LockScreen from "../src/containers/Lockscreen";
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
-// import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Home = () => {
   const Transition = React.forwardRef(function Transition(props, ref) {

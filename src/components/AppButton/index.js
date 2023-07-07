@@ -8,6 +8,7 @@ import Experience from "../../containers/Experience";
 import Activities from "../../containers/Activities";
 import Certifications from "../../containers/Certifications";
 import Contact from "../../containers/Contact";
+import Education from "../../containers/Education";
 
 
 const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
@@ -27,6 +28,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
   const [CertificationsWindow, setCertificationsWindow] = useState(null);
   const [ActivitiesWindow, setActivitiesWindow] = useState(null);
   const [ContactWindow, setContactWindow] = useState(null);
+  const [EducationWindow, setEducationWindow] = useState(null);
   
   const openProjectWindow = Boolean(ProjectWindow);
   const openSkillsWindow = Boolean(SkillsWindow);
@@ -34,6 +36,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
   const openCertificationsWindow = Boolean(CertificationsWindow);
   const openActivitiesWindow = Boolean(ActivitiesWindow);
   const openContactWindow = Boolean(ContactWindow);
+  const openEducationWindow = Boolean(EducationWindow);
 
   const handleClick = (e) => {
 
@@ -57,10 +60,12 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
       setContactWindow(e.currentTarget);
     }else if(btnTarget === "resume"){
       window.open(
-        'https://www.google.co.in/',
+        'https://drive.google.com/file/d/1TXmP3YIHPBWy1m7XI7ckuT0KXtaiSuE-/view?usp=sharing',
         '_blank' 
       );
       
+    }else if(btnTarget === "education"){
+      setEducationWindow(e.currentTarget);
     }
   };
 
@@ -73,6 +78,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
     setCertificationsWindow(null);
     setActivitiesWindow(null);
     setContactWindow(null);
+    setEducationWindow(null);
   };
 
   if (isDragging) {
@@ -93,6 +99,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
         "&:hover": {
           backgroundColor: "rgba(255, 255, 255, 0.1)",
         },
+        
       }}
       onClick={handleClick}
     >
@@ -101,7 +108,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
         alignItems="center"
         sx={{ maxWidth: 50, textAlign: "center" }}
       >
-        <img src={icon} alt={name} style={{ height: 30 }} />
+        <img src={icon} alt={name} style={{ height: 35 }} />
 
         <Typography variant="caption">{name}</Typography>
       </Stack>
@@ -113,6 +120,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
     <Certifications open={openCertificationsWindow} CertificationsWindow={CertificationsWindow} handleClose={handleClose} />
     <Activities open={openActivitiesWindow} ActivitiesWindow={ActivitiesWindow} handleClose={handleClose} />
     <Contact open={openContactWindow} ContactWindow={ContactWindow} handleClose={handleClose} />
+    <Education open={openEducationWindow} EducationWindow={EducationWindow} handleClose={handleClose} />
     </div>
   );
 };

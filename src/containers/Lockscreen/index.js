@@ -1,3 +1,10 @@
+import {
+  useTheme,
+  Stack
+  
+
+  
+} from "@mui/material";
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -16,6 +23,7 @@ import { SigninIcon } from '../../utils/apps';
 import lockscreenBg from '../../../public/lockscreen.jpg'
 // import './lockscreen.scss'
 const LockScreen = ({ open, handleClose, Transition }) => {
+  const theme = useTheme();
 var d = new Date(); // for now
 d.getHours(); // => 9
 d.getMinutes(); // =>  30
@@ -37,13 +45,28 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
         TransitionComponent={Transition}
         keepMounted
       >
-   
-    <img
-      style={{ maxWidth: "100%", height: '100%' }}
+   <Stack
+        sx={{
+          width: "100vw",
+          height: "100vh",
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${lockscreenBg})`,
+          backgroundRepeat:"no-repeat",
+            backgroundSize:"cover",
+          [theme.breakpoints.up("lg")]: {
+            width: "100vw",
+            height: "100vh",
+          },
+        }}
+      >
+        
+    {/* <img
+      style={{ background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+          backgroundRepeat:"no-repeat",
+            backgroundSize:"cover", }}
       src={lockscreenBg}
       alt="image"
     //   onClick={handleClose}
-    />
+    /> */}
     <div style={{ width:"100%",position:"absolute",textAlign:"center",top:"10vh" }}>
         <h1 style={{margin:0,fontSize:"550%"}}>{currentHours}:{currentMinutes}</h1>
         <h6 style={{margin:0,fontSize:"150%"}}>{days[d.getDay()]}, {months[d.getMonth()]} {d.getDate()}</h6>
@@ -60,7 +83,8 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
     <br/>
     <h3>Click Here To Unlock</h3>
     </div>
-        
+    </Stack>
+
       </Dialog>
   
   )
