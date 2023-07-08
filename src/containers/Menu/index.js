@@ -91,6 +91,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           border: "1px solid #525252",
           borderTopRightRadius: 5,
           borderTopLeftRadius: 5,
+          overflowY:"auto"
           // overflowY:"auto"
         }}
       >
@@ -123,9 +124,11 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           direction="row"
           flexWrap="wrap"
           justifyContent="flex-start"
-          sx={{ mb: 3 }}
+          sx={{ mb: 3,
+          overflowY:"auto" }}
         >
           {pinnedApps.map((app, i) => (
+            <a target="_blank" href={app.Link} style={{ color:"#fff",textDecoration:"none"}}>
             <Button
               key={app.name}
               
@@ -140,7 +143,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                 },
               }}
             >
-              <a target="_blank" href={app.Link} style={{ color:"#fff",textDecoration:"none"}}>
+              
               <Stack
                 spacing={1}
                 direction="column"
@@ -152,8 +155,9 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                   
                 <Typography variant="caption">{app.name}</Typography>
               </Stack>
-              </a>
+              
             </Button>
+            </a>
           ))}
         </Stack>
 
@@ -168,11 +172,16 @@ const Menu = ({ open, anchorEl, handleClose }) => {
           flexWrap="wrap"
           justifyContent="flex-start"
           spacing={2}
-          sx={{ px: 2 }}
+          sx={{ 
+          px: 2,
+          overflowY:"auto"
+         }}
+
           
         >
           {recommendedApps.map((app, i) => (
             <Grid item key={app.name} xs={12} lg={6}>
+              <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
               <Button
                 fullWidth
                 sx={{
@@ -185,7 +194,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                   },
                 }}
               >
-                <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
+                
                 <Stack direction="row" alignItems="center" spacing={2}>
                 
                   <img src={app.icon} alt={app.name} style={{ height: 30 }} />
@@ -202,8 +211,9 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                     </Typography>
                   </Stack>
                 </Stack>
-                </a>
+                
               </Button>
+              </a>
             </Grid>
           ))}
           

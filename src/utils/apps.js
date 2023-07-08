@@ -106,6 +106,7 @@ export const recommendedApps = [
   { name: "Outlook", icon: Outlook,Link: "mailto:dadlani.r@northeastern.edu", subtext:"@Roshan Dadlani" },
   { name: "Discord", icon: Discord,Link: "https://discord.gg/TnZrHTyUPu", subtext:"@ROSDAD" },
   { name: "Instagram", icon: Instagram,Link: "https://www.instagram.com/roshan_dadlani/", subtext:"@roshan_dadlani" },
+  { name: "Spotify", icon: Spotify,Link: "https://open.spotify.com/user/31nlhpj2gedrnkg2k6zvzsoghq6q?si=4a0179392f2b4f70", subtext:"@Roshan Dadlani" },
   
   
 ];

@@ -135,7 +135,7 @@ import {
           p: 6,
           flex: 1,
           paddingTop:3,
-          // backdropFilter: "blur(15px)",
+          
           // backgroundColor: `${theme.palette.background.grey}F7`,
           backdropFilter: "blur(15px)",
           border: "1px solid #525252",

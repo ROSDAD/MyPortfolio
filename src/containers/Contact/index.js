@@ -38,6 +38,7 @@ import {
   import emailjs from 'emailjs-com';
   import ContactMeIcon from "../../../public/icons/apps/Contact Me.ico"
   // import { CDBInput, CDBCard, CDBCardBody, CDBIcon, CDBBtn, CDBLink, CDBContainer } from 'cdbreact';
+  // import { CaptchaJs } from "@solarwinter/captchajs";
 
   
   const Contact = ({ open, ProjectWindow, handleClose }) => {

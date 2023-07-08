@@ -1,6 +1,8 @@
 import {
   useTheme,
-  Stack
+  Stack,
+  Snackbar,
+  Alert
   
 
   
@@ -24,6 +26,14 @@ import lockscreenBg from '../../../public/lockscreen.jpg'
 // import './lockscreen.scss'
 const LockScreen = ({ open, handleClose, Transition }) => {
   const theme = useTheme();
+  const [openALert, setOpenAlert] = React.useState(true);
+  const handleCloseAlert = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpenAlert(false);
+  };
 var d = new Date(); // for now
 d.getHours(); // => 9
 d.getMinutes(); // =>  30
@@ -58,7 +68,17 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
           },
         }}
       >
+    <Snackbar
+        // anchorOrigin={{ vertical, horizontal }}
+        open={openALert}
+        onClose={handleCloseAlert}
         
+        // key={vertical + horizontal}
+      >
+        <Alert onClose={handleCloseAlert} severity="info" sx={{ width: '100%' }}>
+          For the best experience use PC/Desktop
+        </Alert>
+        </Snackbar>   
     {/* <img
       style={{ background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
           backgroundRepeat:"no-repeat",
