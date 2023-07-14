@@ -32,7 +32,7 @@ import StickyNote from "../../public/icons/apps/StickyNote.ico";
 import VLC from "../../public/icons/apps/VLC.ico";
 import VSCode from "../../public/icons/apps/VSCode.ico";
 import Word from "../../public/icons/apps/Word.ico";
-import Github from "./icons/apps/Github.ico"
+import Github from "../../public/icons/apps/Github.ico"
 import Linkedin from "../../public/icons/apps/Linkedin.ico"
 import Youtube from "../../public/icons/apps/Youtube.ico"
 import GoogleScholar from "../../public/icons/apps/Google Scholar.ico"
