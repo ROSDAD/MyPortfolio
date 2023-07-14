@@ -6,6 +6,10 @@ module.exports = withPlugins([nextImages], {
     disableStaticImages: true,
   },
 });
+module.exports ={
+  basePath: '/MyPortfolio',
+  assetPrefix: '/MyPortfolio'
+}
 // /**
 //    * @type {import('next').NextConfig}
 //    */
