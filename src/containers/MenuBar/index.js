@@ -17,7 +17,7 @@ const MenuBar = () => {
     setAnchorEl(null);
   };
   const prefix = '/MyPortfolio'
-
+console.log(taskbarApps);
   return (
     <Box
       sx={(theme) => ({
