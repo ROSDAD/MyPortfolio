@@ -172,7 +172,7 @@ const DangerAlert = () => {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10 }} src={ContactMeIcon}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={ContactMeIcon["src"]}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Contact Me</Typography>

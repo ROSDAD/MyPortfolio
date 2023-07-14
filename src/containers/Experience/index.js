@@ -111,7 +111,7 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10 }} src={experienceIcon}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={experienceIcon["src"]}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Experience</Typography>

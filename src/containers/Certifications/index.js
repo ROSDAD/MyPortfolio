@@ -122,7 +122,7 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10}} src={certificationsIcon}/>
+              <img style={{ width: 18, height: 18,marginRight:10}} src={certificationsIcon["src"]}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Certifications</Typography>
@@ -184,7 +184,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={AZ900}
+              src={AZ900["src"]}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -228,7 +228,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={DP900}
+              src={DP900["src"]}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}

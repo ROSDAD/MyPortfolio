@@ -96,7 +96,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
     <a href="#" onClick={handleClose}>    
     <img
       style={{ width:"40px",height:"40px" }}
-      src={SigninIcon}
+      src={SigninIcon["src"]}
       alt="image"
     />
     </a>

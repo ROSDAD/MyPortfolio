@@ -151,7 +151,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                 justifyContent="center"
               >
 
-                    <img src={app.icon} alt={app.name} style={{ height: 30 }} />
+                    <img src={app.icon["src"]} alt={app.name} style={{ height: 30 }} />
                   
                 <Typography variant="caption">{app.name}</Typography>
               </Stack>
@@ -197,7 +197,7 @@ const Menu = ({ open, anchorEl, handleClose }) => {
                 
                 <Stack direction="row" alignItems="center" spacing={2}>
                 
-                  <img src={app.icon} alt={app.name} style={{ height: 30 }} />
+                  <img src={app.icon["src"]} alt={app.name} style={{ height: 30 }} />
                 
                   <Stack alignItems="flex-start">
                     <Typography variant="caption" sx={{ color: "#fff" }}>
