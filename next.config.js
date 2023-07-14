@@ -1,20 +1,20 @@
-// const withPlugins = require("next-compose-plugins");
-// const nextImages = require("next-images");
+const withPlugins = require("next-compose-plugins");
+const nextImages = require("next-images");
 
-// module.exports = withPlugins([nextImages], {
-//   images: {
-//     disableStaticImages: true,
-//   },
-// });
-/**
-   * @type {import('next').NextConfig}
-   */
-const nextConfig   = {
+module.exports = withPlugins([nextImages], {
   images: {
-    loader: 'akamai',
-    path: '',
+    disableStaticImages: true,
   },
-  assetPrefix: './',
-};
+});
+// /**
+//    * @type {import('next').NextConfig}
+//    */
+// const nextConfig   = {
+//   images: {
+//     loader: 'akamai',
+//     path: '',
+//   },
+//   assetPrefix: './',
+// };
 
-export default = nextConfig;
+// export default = nextConfig;
