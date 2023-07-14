@@ -59,7 +59,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
         sx={{
           width: "100vw",
           height: "100vh",
-          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${lockscreenBg})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${lockscreenBg["src"]})`,
           backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
           [theme.breakpoints.up("lg")]: {
