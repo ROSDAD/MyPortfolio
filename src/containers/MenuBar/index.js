@@ -42,7 +42,7 @@ console.log(taskbarApps);
 
       >
         <MenuButton onClick={handleClick}>
-          <img src={menuIcon} alt="Start" style={{ height: 34 }} />
+          <img src={menuIcon["src"]} alt="Start" style={{ height: 34 }} />
         </MenuButton>
 
         {/* <MenuButton>
