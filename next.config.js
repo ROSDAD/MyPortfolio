@@ -7,8 +7,8 @@ module.exports = withPlugins([nextImages], {
   },
 });
 module.exports ={
-  basePath: '/MyPortfolio',
-  assetPrefix: '/'
+  basePath: '/',
+  assetPrefix: '/MyPortfolio'
 }
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
