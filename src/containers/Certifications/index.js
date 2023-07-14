@@ -208,10 +208,10 @@ import {
             <ListGroup className="list-group-flush" >
             
               <ListGroup.Item style={{"background-color": "rgba(247, 247, 247, 0.4)",color:"#fff"}}>
-                {/* <Card.Link href="https://github.com/ROSDAD/Dr.-Deppy" target="_blank">GitHub</Card.Link>
-                <Card.Link href="https://link.springer.com/chapter/10.1007/978-981-16-6460-1_37" target="_blank">Research Paper</Card.Link>
-                <Card.Link href="https://www.youtube.com/watch?v=uun96RLq3P0" target="_blank">Youtube</Card.Link> */}
-                Certification number: EF66AC-2RFD65
+             
+                <Card.Link href="https://www.credly.com/badges/129ab566-be35-42c9-bad8-30c95e55e955/public_url" target="_blank">Link</Card.Link>
+                
+                
               </ListGroup.Item>
              
              
@@ -255,7 +255,7 @@ import {
                 {/* <Card.Link href="https://github.com/ROSDAD/Dr.-Deppy" target="_blank">GitHub</Card.Link>
                 <Card.Link href="https://link.springer.com/chapter/10.1007/978-981-16-6460-1_37" target="_blank">Research Paper</Card.Link>
                 <Card.Link href="https://www.youtube.com/watch?v=uun96RLq3P0" target="_blank">Youtube</Card.Link> */}
-                Certification number: 2G4D2F-1281DE
+                <Card.Link href="https://www.credly.com/badges/c3f1f726-f007-4661-89b3-ac9365863952/public_url" target="_blank">Link</Card.Link>
               </ListGroup.Item>
              
              
