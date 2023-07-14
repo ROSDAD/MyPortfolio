@@ -10,15 +10,13 @@ module.exports ={
   basePath: '/MyPortfolio',
   assetPrefix: '/MyPortfolio'
 }
-// /**
-//    * @type {import('next').NextConfig}
-//    */
-// const nextConfig   = {
-//   images: {
-//     loader: 'akamai',
-//     path: '',
-//   },
-//   assetPrefix: './',
-// };
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    loader: "akamai",
+    path: "/",
+  },
+};
 
-// export default = nextConfig;
+module.exports = nextConfig;
