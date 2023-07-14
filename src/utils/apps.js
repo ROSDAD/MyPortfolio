@@ -91,7 +91,7 @@ export const desktopApps = [
 // const domain = window.location.hostname;
 export const pinnedApps = [
   { name: "Resume", icon: PDF,Link: "https://drive.google.com/file/d/1PSUacxh9CB_B-cKieMgHopbDRYnomsUw/view?usp=sharing" },
-  { name: "Github", icon: "https://rosdad.github.io" + Github,Link: "https://github.com/ROSDAD" },
+  { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
   { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/" },
   { name: "Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
   { name: "Youtube", icon: Youtube,Link: "https://www.youtube.com/@roshandadlani" },
@@ -112,7 +112,7 @@ export const recommendedApps = [
 ];
 
 export const taskbarApps = [
-  { name: "Github", icon: "https://rosdad.github.io"+ Github,Link: "https://github.com/ROSDAD" },
+  { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
   { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/" },
   { name: "Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
   { name: "Youtube", icon: Youtube,Link: "https://www.youtube.com/@roshandadlani" },

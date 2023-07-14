@@ -50,7 +50,7 @@ console.log(taskbarApps);
           <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
           <MenuButton key={i}>
            
-              <img key={i} src={app.icon} alt={app.name} style={{ height: 26 }} />
+              <img key={i} src={"https://rosdad.github.io"+ app.icon} alt={app.name} style={{ height: 26 }} />
             
           </MenuButton>
           </a>
