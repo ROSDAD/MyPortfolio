@@ -16,6 +16,7 @@ const MenuBar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const prefix = '/MyPortfolio'
 
   return (
     <Box
@@ -49,7 +50,7 @@ const MenuBar = () => {
           <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
           <MenuButton key={i}>
            
-              <img key={i} src={app.icon} alt={app.name} style={{ height: 26 }} />
+              <img key={i} src={prefix + app.icon} alt={app.name} style={{ height: 26 }} />
             
           </MenuButton>
           </a>

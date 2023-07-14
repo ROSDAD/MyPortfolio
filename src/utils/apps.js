@@ -88,7 +88,7 @@ export const desktopApps = [
   { name: "Contact Me", icon: ContactMe,btnTarget:"contactme" },
   { name: "Resume", icon: PDF,btnTarget:"resume" },
 ];
-const prefix = '/MyPortfolio'
+
 export const pinnedApps = [
   { name: "Resume", icon: PDF,Link: "https://drive.google.com/file/d/1PSUacxh9CB_B-cKieMgHopbDRYnomsUw/view?usp=sharing" },
   { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
