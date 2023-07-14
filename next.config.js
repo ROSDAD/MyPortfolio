@@ -3,7 +3,7 @@ const nextImages = require("next-images");
 
 module.exports = withPlugins([nextImages], {
   images: {
-    disableStaticImages: false,
+    disableStaticImages: true,
   },
 });
 module.exports ={
