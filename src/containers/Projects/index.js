@@ -91,7 +91,7 @@ import {
         sx={{
           width: "100vw",
           height: "100vh",
-          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${Background['src']})`,
           backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
           [theme.breakpoints.up("lg")]: {
