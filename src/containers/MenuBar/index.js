@@ -42,7 +42,7 @@ console.log(taskbarApps);
 
       >
         <MenuButton onClick={handleClick}>
-          <img src={menuIcon["src"]} alt="Start" style={{ height: 34 }} />
+          <img src={menuIcon} alt="Start" style={{ height: 34 }} />
         </MenuButton>
 
         {/* <MenuButton>
@@ -53,7 +53,7 @@ console.log(taskbarApps);
           <a target="_blank" href={app.Link} style={{color:"#fff",textDecoration:"none"}}>
           <MenuButton key={i}>
            
-              <img key={i} src={app.icon["src"]} alt={app.name} style={{ height: 26 }} />
+              <img key={i} src={app.icon} alt={app.name} style={{ height: 26 }} />
             
           </MenuButton>
           </a>

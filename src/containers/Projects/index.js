@@ -130,7 +130,7 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10}} src={ProjectIcon["src"]}/>
+              <img style={{ width: 18, height: 18,marginRight:10}} src={ProjectIcon}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Projects</Typography>
@@ -192,7 +192,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Deppy["src"]}
+              src={Deppy}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -234,7 +234,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={MIME["src"]}
+              src={MIME}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -277,7 +277,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Practo["src"]}
+              src={Practo}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -317,7 +317,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Click2Cart["src"]}
+              src={Click2Cart}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -360,7 +360,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={DFS["src"]}
+              src={DFS}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}
@@ -398,7 +398,7 @@ import {
             {/* <Card.Img variant="top" src={Background} /> */}
             <Card.Img
               variant="top"
-              src={Tweesent["src"]}
+              src={Tweesent}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               // style={{ opacity: isHovered ? "0.6" : "1" }}

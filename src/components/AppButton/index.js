@@ -108,7 +108,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
         alignItems="center"
         sx={{ maxWidth: 50, textAlign: "center" }}
       >
-        <img src={icon["src"]} alt={name} style={{ height: 35 }} />
+        <img src={icon} alt={name} style={{ height: 35 }} />
 
         <Typography variant="caption">{name}</Typography>
       </Stack>

@@ -49,7 +49,7 @@ import {
     const Skills = ({ name, icon, bgColor, tColor,fLetter }) => (
       // if(icon!=""){
         
-      <Chip style={{ margin:5,backgroundColor:{bgColor},color:{tColor} }} alt="N"avatar={<Avatar alt="N" src={icon["src"]}>{fLetter}</Avatar>} label={name} />
+      <Chip style={{ margin:5,backgroundColor:{bgColor},color:{tColor} }} alt="N"avatar={<Avatar alt="N" src={icon}>{fLetter}</Avatar>} label={name} />
       
     );
     
@@ -100,7 +100,7 @@ import {
               }}
             >
               {/* <Folder/> */}
-              <img style={{ width: 18, height: 18,marginRight:10 }} src={SkillIcon["src"]}/>
+              <img style={{ width: 18, height: 18,marginRight:10 }} src={SkillIcon}/>
 
               {/* <Avatar sx={{ mr: 1.5, width: 30, height: 30 }} /> */}
               <Typography>Skills</Typography>
@@ -135,7 +135,7 @@ import {
           }}
           
         >
-        <img src={skills["src"]} style={{
+        <img src={skills} style={{
           display:"block",
           marginLeft:"auto",
           marginRight:"auto",
