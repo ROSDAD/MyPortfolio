@@ -89,13 +89,13 @@ import {
         .then(
           (result) => {
            
-            console.log(result.text);
+            // console.log(result.text);
             setShow(true);
            form.current.reset();
           },
           (error) => {
             alert('There was an Error! Please Try again!');
-            console.log(error.text);
+            // console.log(error.text);
           }
         );
     };

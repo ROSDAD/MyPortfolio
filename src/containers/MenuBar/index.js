@@ -20,7 +20,7 @@ const MenuBar = () => {
   // if (typeof window !== "undefined") {
   //   // Client-side-only code
   // }
-console.log(taskbarApps);
+// console.log(taskbarApps);
   return (
     <Box
       sx={(theme) => ({
