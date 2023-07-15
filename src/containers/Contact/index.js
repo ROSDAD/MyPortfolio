@@ -133,7 +133,7 @@ const DangerAlert = () => {
         sx={{
           width: "100vw",
           height: "100vh",
-          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(${Background['src']})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(${Background})`,
           backgroundRepeat:"no-repeat",
           backgroundSize:"cover",
           

@@ -6,17 +6,12 @@ module.exports = withPlugins([nextImages], {
     disableStaticImages: true,
   },
 });
+//for github pages
 // module.exports ={
 //   basePath: '/MyPortfolio',
 //   assetPrefix: '/MyPortfolio'
 // }
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   images: {
-//     loader: "akamai",
-//     path: "/MyPortfolio",
-//   },
-// };
 
-// module.exports = nextConfig;
+//for github pages
+
+
