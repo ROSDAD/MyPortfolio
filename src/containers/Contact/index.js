@@ -225,16 +225,16 @@ const DangerAlert = () => {
         <Form id="contact-form" ref={form} onSubmit={sendEmail}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name<span style={{color:"red"}}>*</span></Form.Label>
-            <Form.Control   name="from_name" type="text" placeholder="Enter Name" />
+            <Form.Control   name="from_name" type="text" placeholder="Enter Name" required="required"/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email Address<span style={{color:"red"}}>*</span></Form.Label>
-            <Form.Control   name="reply_mail" type="email" placeholder="Enter Email" />
+            <Form.Control   name="reply_mail" type="email" placeholder="Enter Email" required="required"/>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Message<span style={{color:"red"}}>*</span></Form.Label>
-            <Form.Control  name="message" as="textarea" rows={3} placeholder="Message" />
+            <Form.Control  name="message" as="textarea" rows={3} placeholder="Message" required="required"/>
           </Form.Group>
           <div style={{
           
