@@ -72,10 +72,20 @@ const Menu = ({ open, anchorEl, handleClose }) => {
         [theme.breakpoints.up("lg")]: {
           width: "38vw",
           height: "90vh",
+          maxHeight:780,
+          maxWidth:638
         },
         [theme.breakpoints.up("md")]: {
           width: 500,
           height: "85vh",
+          maxHeight:780,
+          maxWidth:638
+        },
+        [theme.breakpoints.up("xs")]: {
+          width: "94vw",
+          height: "80vh",
+          maxHeight:780,
+          maxWidth:638
         },
        
         
