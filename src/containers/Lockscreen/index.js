@@ -27,6 +27,7 @@ import lockscreenBg from '../../../public/lockscreen.jpg'
 const LockScreen = ({ open, handleClose, Transition }) => {
   const theme = useTheme();
   const [openALert, setOpenAlert] = React.useState(true);
+  const [openLockscreen, setOpenLockscreen] = React.useState(true);
   const handleCloseAlert = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -34,6 +35,9 @@ const LockScreen = ({ open, handleClose, Transition }) => {
 
     setOpenAlert(false);
   };
+  
+
+
 var d = new Date(); // for now
 d.getHours(); // => 9
 d.getMinutes(); // =>  30
@@ -67,6 +71,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
             height: "100vh",
           },
         }}
+        onClick={handleClose}
       >
     <Snackbar
         // anchorOrigin={{ vertical, horizontal }}
@@ -88,8 +93,8 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
     //   onClick={handleClose}
     /> */}
     <div style={{ width:"100%",position:"absolute",textAlign:"center",top:"10vh" }}>
-        <h1 style={{margin:0,fontSize:"550%"}}>{currentHours}:{currentMinutes}</h1>
-        <h6 style={{margin:0,fontSize:"150%"}}>{days[d.getDay()]}, {months[d.getMonth()]} {d.getDate()}</h6>
+        <h1 style={{margin:0,fontSize:"550%",fontFamily:"Segoe UI Light",fontWeight:"1000"}}>{currentHours}:{currentMinutes}</h1>
+        <h6 style={{margin:0,fontSize:"140%",fontFamily:"Segoe UI Light",fontWeight:"1000"}}>{days[d.getDay()]}, {months[d.getMonth()]} {d.getDate()}</h6>
         
     </div>
     <div style={{ width:"100%",position:"absolute",textAlign:"center",top:"82vh"}}>
@@ -101,7 +106,7 @@ currentMinutes = ("0" + currentMinutes).slice(-2);
     />
     </a>
     <br/>
-    <h3>Click Here To Unlock</h3>
+    <h4 style={{margin:0,fontSize:"150%",fontFamily:"Segoe UI Light",fontWeight:"1000"}}>Click Anywhere To Unlock</h4>
     </div>
     </Stack>
 
