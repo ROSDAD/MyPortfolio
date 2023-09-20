@@ -220,7 +220,60 @@ Management and Business Analysis.
           </li>
           </ul>
           </Stack>
-          
+          <Stack style={{ width:"100%" }}>
+            
+            <hr style={{width:"100%", "background-color":"#000"}}/>   
+            <h4 style={{
+              margin:0
+            }}>
+              Fidelity Investments  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>Boston, MA</i></span>
+              
+            </h4>
+            
+            <p 
+            style={{
+              margin:0,
+              fontSize:14,
+              paddingBottom:15,
+              color:"#ffba00",
+            }}>
+              <i>Full Stack Engineer, Co-op 
+              <span style={{
+                float:"right",
+                
+              }}>
+              Jul 2023 – Dec 2023
+              </span>
+             </i>
+              
+            </p>
+            
+          <ul style={{ margin:0 }}>
+            <li>
+              <p style={{
+                "text-align":"justify"
+              }}>
+              Collaborated with a squad of 15 to build and maintain an end-to-end Document Extraction Tool.
+              </p>
+            </li>
+            <li>
+              <p style={{
+                "text-align":"justify"
+              }}>
+              Proficiently worked on Java 13 and Spring Boot to create REST APIs, and AngularJS for developing the UI. 
+              </p>
+            </li>
+            <li>
+              <p style={{
+                "text-align":"justify"
+              }}>
+               Significantly enhanced the efficiency, system performance and reliability of the tool.
+  
+              </p>
+            </li>
+            
+            </ul>
+            </Stack>
           <Stack style={{ width:"100%" }}>
             
             <hr style={{width:"100%", "background-color":"#000"}}/>   

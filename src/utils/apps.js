@@ -72,6 +72,7 @@ import springboot from "../../public/icons/skills/springboot.png"
 import sql from "../../public/icons/skills/sql.png"
 import windows from "../../public/icons/skills/windows.png"
 import uipath from "../../public/icons/skills/uipath.png"
+import typescript from "../../public/icons/skills/typescript.png"
 
 
 
@@ -130,6 +131,7 @@ export const programmingLanguages = [
   { name: "SQL", icon: sql,bgColor: "#fff",tColor:"#000" },
   { name: "JQuery", icon: jquery,bgColor: "#fff",tColor:"#000" },
   { name: "PHP", icon: php,bgColor: "#fff",tColor:"#000"},
+  { name: "TypeScript", icon: typescript,bgColor: "#fff",tColor:"#000"},
 ];
 
 export const frameworks = [
