@@ -191,22 +191,21 @@ import {
               <p style={{
                 "text-align":"justify"
               }}>
-              Collaborated with a squad of 15 to build and maintain an end-to-end Document Extraction Tool.
+              Collaborated with a squad of 15, spearheading the development and maintenance of an End-to-End Document Extraction Tool.
               </p>
             </li>
             <li>
               <p style={{
                 "text-align":"justify"
               }}>
-              Proficiently worked on Java 13 and Spring Boot to create REST APIs, and AngularJS for developing the UI. 
+              Showcased expertise in Java 13, Spring Boot for REST APIs, AngularJS for UI, and SonarQube for code efficiency enhancements. 
               </p>
             </li>
             <li>
               <p style={{
                 "text-align":"justify"
               }}>
-               Significantly enhanced the efficiency, system performance and reliability of the tool.
-  
+               Instrumentally elevated tool efficiency, system performance, and overall reliability to foster operational excellence.  
               </p>
             </li>
             
