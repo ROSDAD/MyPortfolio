@@ -24,9 +24,8 @@ const Home = () => {
   };
   
   return (
-    <Helmet>
-    <meta charSet="utf-8" />
-    <title>Roshan Dadlani | Personal Portfolio</title>
+    
+    
     
 
     <Box
@@ -40,6 +39,7 @@ const Home = () => {
         backgroundSize: "cover",
       }}
     >
+      <title>Roshan Dadlani | Personal Portfolio</title>
     {/* <LockScreen open={openModal} handleClose={handleCloseModal} Transition={Transition}/> 
     <button style={{position:'absolute', top:0}} onClick={handleClickOpen}>TRIAL</button>   */}
       <Box
@@ -79,7 +79,7 @@ const Home = () => {
       </Box>
       
     </Box>
-    </Helmet>
+    
    
    
     
