@@ -24,7 +24,11 @@ const Home = () => {
   };
   
   return (
-   
+    <Helmet>
+    <meta charSet="utf-8" />
+    <title>Roshan Dadlani | Personal Portfolio</title>
+    
+
     <Box
       sx={{
         height: "100vh",
@@ -75,7 +79,7 @@ const Home = () => {
       </Box>
       
     </Box>
-   
+    </Helmet>
    
    
     
