@@ -73,6 +73,8 @@ import sql from "../../public/icons/skills/sql.png"
 import windows from "../../public/icons/skills/windows.png"
 import uipath from "../../public/icons/skills/uipath.png"
 import typescript from "../../public/icons/skills/typescript.png"
+import go from "../../public/icons/skills/go.png"
+import jira from "../../public/icons/skills/jira.png"
 
 
 
@@ -132,6 +134,7 @@ export const programmingLanguages = [
   { name: "JQuery", icon: jquery,bgColor: "#fff",tColor:"#000" },
   { name: "PHP", icon: php,bgColor: "#fff",tColor:"#000"},
   { name: "TypeScript", icon: typescript,bgColor: "#fff",tColor:"#000"},
+  { name: "Go-Lang", icon: go,bgColor: "#fff",tColor:"#000"}
 ];
 
 export const frameworks = [
@@ -171,6 +174,7 @@ export const others = [
   { name: "Rest API", icon: restapi,bgColor: "#fff",tColor:"#000" },
   { name: "Docker", icon: docker,bgColor: "#fff",tColor:"#000" },
   { name: "UiPath", icon: uipath,bgColor: "#fff",tColor:"#000" },
+  { name: "Jira", icon: jira,bgColor: "#fff",tColor:"#000" }
 ];
 
 export const cortanaIcon = Cortana;
