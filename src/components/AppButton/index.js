@@ -37,7 +37,23 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
   const openActivitiesWindow = Boolean(ActivitiesWindow);
   const openContactWindow = Boolean(ContactWindow);
   const openEducationWindow = Boolean(EducationWindow);
+  const [count, setCount] = useState(null);
 
+  useEffect(() => {
+    // Replace 'yourNamespace' and 'yourKey' with your actual namespace and key
+    const getCount = async () => {
+      try {
+        const response = await fetch('https://api.countapi.xyz/hit/yourNamespace/yourKey');
+        const data = await response.json();
+        setCount(data.value);
+      } catch (error) {
+        console.error("Error fetching visitor count:", error);
+        setCount("Error");
+      }
+    };
+
+    getCount();
+  }, []);
   const handleClick = (e) => {
 
     
@@ -121,6 +137,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
     <Activities open={openActivitiesWindow} ActivitiesWindow={ActivitiesWindow} handleClose={handleClose} />
     <Contact open={openContactWindow} ContactWindow={ContactWindow} handleClose={handleClose} />
     <Education open={openEducationWindow} EducationWindow={EducationWindow} handleClose={handleClose} />
+    Visitor Count: {count !== null ? count : 'Loading...'}
     </div>
   );
 };
