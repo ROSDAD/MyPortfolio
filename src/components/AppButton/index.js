@@ -101,7 +101,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
         },
         
       }}
-      onClick={handleClick}
+      onClick={handleClick} 
     >
       <Stack
         spacing={1}
