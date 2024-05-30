@@ -75,8 +75,8 @@ import uipath from "../../public/icons/skills/uipath.png"
 import typescript from "../../public/icons/skills/typescript.png"
 import go from "../../public/icons/skills/go.png"
 import jira from "../../public/icons/skills/jira.png"
-
-
+import c-sharp from "../../public/icons/skills/c-sharp.png"
+import dotnet from "../../public/icons/skills/dotnet.png"
 
 export const desktopApps = [
   { name: "Education", icon: Education,btnTarget:"education" },
@@ -134,7 +134,8 @@ export const programmingLanguages = [
   { name: "JQuery", icon: jquery,bgColor: "#fff",tColor:"#000" },
   { name: "PHP", icon: php,bgColor: "#fff",tColor:"#000"},
   { name: "TypeScript", icon: typescript,bgColor: "#fff",tColor:"#000"},
-  { name: "Go-Lang", icon: go,bgColor: "#fff",tColor:"#000"}
+  { name: "Go-Lang", icon: go,bgColor: "#fff",tColor:"#000"},
+  { name: "C#", icon: c-sharp,bgColor: "#fff",tColor:"#000"}
 ];
 
 export const frameworks = [
@@ -148,6 +149,7 @@ export const frameworks = [
   { name: "AngularJS", icon: angularJs,bgColor: "#fff",tColor:"#000" },
   { name: "React.js", icon: reactJs,bgColor: "#fff",tColor:"#000" },
   { name: "Node.js", icon: nodeJs,bgColor: "#fff",tColor:"#000" },
+  { name: ".NET", icon: dotnet,bgColor: "#fff",tColor:"#000" },
 
 ];
 
