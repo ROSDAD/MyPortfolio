@@ -75,7 +75,7 @@ import uipath from "../../public/icons/skills/uipath.png"
 import typescript from "../../public/icons/skills/typescript.png"
 import go from "../../public/icons/skills/go.png"
 import jira from "../../public/icons/skills/jira.png"
-import c-sharp from "../../public/icons/skills/c-sharp.png"
+import csharp from "../../public/icons/skills/c-sharp.png"
 import dotnet from "../../public/icons/skills/dotnet.png"
 
 export const desktopApps = [
@@ -135,7 +135,7 @@ export const programmingLanguages = [
   { name: "PHP", icon: php,bgColor: "#fff",tColor:"#000"},
   { name: "TypeScript", icon: typescript,bgColor: "#fff",tColor:"#000"},
   { name: "Go-Lang", icon: go,bgColor: "#fff",tColor:"#000"},
-  { name: "C#", icon: c-sharp,bgColor: "#fff",tColor:"#000"}
+  { name: "C#", icon: csharp,bgColor: "#fff",tColor:"#000"}
 ];
 
 export const frameworks = [
