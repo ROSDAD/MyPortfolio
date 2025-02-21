@@ -60,7 +60,7 @@ const AppButton = ({ id, left, top, name, icon,btnTarget }) => {
       setContactWindow(e.currentTarget);
     }else if(btnTarget === "resume"){
       window.open(
-        'https://drive.google.com/file/d/1hy5NVFDBTKZ4CxFeyvnZ8JIjNBj7xp5t/view?usp=sharing',
+        'https://drive.google.com/file/d/1hy5NVFDBTKZ4CxFeyvnZ8JIjNBj7xp5t/view?usp=drive_link',
         '_blank' 
       );
       

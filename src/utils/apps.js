@@ -93,7 +93,7 @@ export const desktopApps = [
 ];
 // const domain = window.location.hostname;
 export const pinnedApps = [
-  { name: "Resume", icon: PDF,Link: "https://drive.google.com/file/d/1hy5NVFDBTKZ4CxFeyvnZ8JIjNBj7xp5t/view?usp=sharing" },
+  { name: "Resume", icon: PDF,Link: "https://drive.google.com/file/d/1hy5NVFDBTKZ4CxFeyvnZ8JIjNBj7xp5t/view?usp=drive_link" },
   { name: "Github", icon: Github,Link: "https://github.com/ROSDAD" },
   { name: "Linkedin", icon: Linkedin,Link: "https://www.linkedin.com/in/roshan-dadlani/" },
   { name: "Scholar", icon: GoogleScholar,Link:"https://scholar.google.com/citations?user=B2TnCsYAAAAJ&hl=en&oi=sra" },
