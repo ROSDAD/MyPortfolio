@@ -228,12 +228,12 @@ import {
             paddingBottom:15,
             color:"#ffba00",
           }}>
-            <i>Co-Founder, Hiring Manager, Full Stack Web Developer 
+            <i>Co-Founder, Full Stack Web Developer 
             <span style={{
               float:"right",
               
             }}>
-            Dec 2020 – Mar 2023
+            Dec 2020 – Feb 2022
             </span>
            </i>
             
