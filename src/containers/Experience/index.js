@@ -219,6 +219,7 @@ import {
           }}>
             Weddingz Bell Pvt. Ltd.  <span style={{fontSize:18, fontWeight:"normal",float:"right",color:"#ffba00",}}><i>Pune, IN</i></span>
             
+            
           </h4>
           
           <p 
